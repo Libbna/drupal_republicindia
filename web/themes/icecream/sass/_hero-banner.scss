@@ -1,0 +1,18 @@
+.news-main {
+  .hero-banner {
+    padding: 10px;
+    background-color: #f8f8f8;
+    min-height: 228px;
+
+    #block-icecream-herobanner {
+      @include section1200();
+    }
+
+    .region-banner-top {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

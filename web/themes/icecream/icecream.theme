@@ -1,0 +1,33 @@
+<?php
+
+// function icecream_preprocess_field (&$variables) {
+//   if ($variables['logged_in'] == TRUE && $variables['field']->getOwnerId() == $variables['user']->id()) {
+//   $variables['field__item']['suffix'] = 'TOP NEWS';
+//   }
+// }
+
+// use Drupal\Core\Form\FormStateInterface;
+
+function icecream_preprocess_node (&$variables) {
+  $variables['current_user_is_owner'] = FALSE;
+
+  if ($variables['logged_in'] == TRUE && $variables['node']->getOwnerId() == $variables['user']->id()) {
+    $variables['current_user_is_owner'] = TRUE;
+  }
+}
+
+function icecream_theme_suggestions_node_alter (array &$suggestions, array $variables) {
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+
+  if ($logged_in) {
+    $suggestions[] = 'node__' . 'authenticated' ;
+  }
+}
+
+function icecream_preprocess_block(&$variables) {
+  $variables['today'] = date('H:i, m-d-Y');
+}
+
+function icecream_form_search_block_form_alter(&$form, &$form_state) {
+      $form['keys']['#attributes']['placeholder'][] = t('Search here');
+}

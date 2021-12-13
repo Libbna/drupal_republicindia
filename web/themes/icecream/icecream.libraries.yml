@@ -1,0 +1,19 @@
+icecream-style:
+  version: 1.0
+  license: MIT
+  css:
+    theme:
+      css/main.css: {weight: 10}
+      css/layout.css: {weight: 10}
+      css/mediaQueries.css: {weight: 10}
+  js:
+    js/app.js: {weight: -10}
+  dependencies:
+    - core/jquery
+bootstrap:
+  js:
+    https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js
+  dependencies:
+    - core/jquery
+
+
