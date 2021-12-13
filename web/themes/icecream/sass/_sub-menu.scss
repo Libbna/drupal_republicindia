@@ -22,7 +22,6 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
-  overflow: auto;
 
   #block-followus-2 {
     margin-top: 28rem;
@@ -97,7 +96,8 @@
 .sub_Menu {
   padding-top: 3rem;
   width: 83%;
-  height: 145px;
+  height: 554px;
+  overflow: auto;
 
   @media only screen and (max-width: 768px) {
     width: 100%;

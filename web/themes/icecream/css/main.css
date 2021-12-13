@@ -520,7 +520,6 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
-  overflow: auto;
 }
 .region-secondary-menu #block-followus-2 {
   margin-top: 28rem;
@@ -586,7 +585,8 @@
 .sub_Menu {
   padding-top: 3rem;
   width: 83%;
-  height: 145px;
+  height: 554px;
+  overflow: auto;
 }
 @media only screen and (max-width: 768px) {
   .sub_Menu {
@@ -732,9 +732,12 @@
 }
 
 .news-search {
-  margin-left: 13rem;
-  width: 61%;
-  left: 0;
+  margin-left: -2rem;
+  top: 10.6rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  padding-top: 2rem;
+  width: 88%;
   position: fixed;
   z-index: 2;
   overflow: auto;
@@ -764,6 +767,9 @@
 }
 .news-search .search-block-form {
   display: block;
+}
+.news-search #search-block-form {
+  width: 100%;
 }
 
 * {
