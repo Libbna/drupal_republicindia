@@ -1,0 +1,37 @@
+.block-views-blocksidebar-list-block-8 {
+  padding-top: 40px;
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: roboto, sans-serif;
+    margin: 0;
+  }
+}
+
+.entertainment-block {
+  display: flex;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgb(221 221 221 / 50%);
+
+  .views-col {
+    border-right: 1px solid #ddd;
+    padding: 0 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .views-field-title {
+      .field-content {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        text-transform: none;
+      }
+    }
+  }
+}
