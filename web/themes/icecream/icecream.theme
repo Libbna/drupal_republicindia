@@ -8,12 +8,16 @@
 
 // use Drupal\Core\Form\FormStateInterface;
 
+
 function icecream_preprocess_node (&$variables) {
   $variables['current_user_is_owner'] = FALSE;
 
   if ($variables['logged_in'] == TRUE && $variables['node']->getOwnerId() == $variables['user']->id()) {
     $variables['current_user_is_owner'] = TRUE;
   }
+
+  $date = $variables['node']->getCreatedTime();
+  $variables['date'] = \Drupal::service('date.formatter')->format($date, 'new_date');
 }
 
 function icecream_theme_suggestions_node_alter (array &$suggestions, array $variables) {

@@ -1,6 +1,9 @@
 .layout-container {
   .main-header {
+    position: fixed;
+    z-index: 1;
     display: flex;
+    width: 100%;
     justify-content: center;
 
     .inner-main-header {
@@ -47,28 +50,72 @@
             padding-bottom: 5px;
             overflow: hidden;
 
-            .menu_items {
-              display: flex;
-              justify-content: space-between;
-              font-size: 16px;
-              // font-family: Roboto,sans-serif;
-              transition: all .5s;
-              list-style-type: none;
+            // .menu_items {
+            //   display: flex;
+            //   justify-content: space-between;
+            //   font-size: 16px;
+            //   // font-family: Roboto,sans-serif;
+            //   transition: all .5s;
+            //   list-style-type: none;
 
-              .menu_item {
-                @media only screen and (max-width: 768px) {
-                  flex-shrink: 0;
-                  padding-right: 21px;
-                }
-                a {
-                  text-decoration: none;
-                  color: $black;
-                }
-              }
+            //   .menu_item {
+            //     @media only screen and (max-width: 768px) {
+            //       flex-shrink: 0;
+            //       padding-right: 21px;
+            //     }
+            //     a {
+            //       text-decoration: none;
+            //       color: $black;
+            //     }
+            //   }
+            // }
+          }
+        }
+
+        .skin-default {
+          display: flex;
+          flex-direction: row-reverse;
+          padding-top: 10px;
+          align-items: center;
+          justify-content: space-between;
+
+          .views_slideshow_cycle_slide {
+            display: flex;
+            overflow: hidden;
+            padding-bottom: 18px;
+
+            .views-row {
+              margin-right: 30px;
             }
+          }
+          .views-slideshow-controls-top {
+            margin-top: -18px;
+          }
+        }
+
+        .views_slideshow_cycle_teaser_section{
+          width: 40rem;
+          height: 50px;
+
+          .views_slideshow_cycle_div_main_menus-block_1_1 {
+            height: auto;
           }
         }
       }
     }
   }
+}
+.news-main {
+  position: relative;
+  top: 7rem;
+}
+.views-slideshow-controls-text-pause-processed {
+  // display: block;
+  display: none;
+}
+.views-slideshow-controls-text-previous-processed {
+  padding-right: 14px;
+}
+.views_slideshow_cycle_slide {
+  display: flex;
 }

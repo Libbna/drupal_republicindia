@@ -1,5 +1,8 @@
 .layout-container .main-header {
+  position: fixed;
+  z-index: 1;
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 .layout-container .main-header .inner-main-header {
@@ -44,22 +47,47 @@
   padding-bottom: 5px;
   overflow: hidden;
 }
-.layout-container .main-header .inner-main-header .menu-section .menu-container .region-primary-menu .menu_items {
+.layout-container .main-header .inner-main-header .menu-section .skin-default {
   display: flex;
+  flex-direction: row-reverse;
+  padding-top: 10px;
+  align-items: center;
   justify-content: space-between;
-  font-size: 16px;
-  transition: all 0.5s;
-  list-style-type: none;
 }
-@media only screen and (max-width: 768px) {
-  .layout-container .main-header .inner-main-header .menu-section .menu-container .region-primary-menu .menu_items .menu_item {
-    flex-shrink: 0;
-    padding-right: 21px;
-  }
+.layout-container .main-header .inner-main-header .menu-section .skin-default .views_slideshow_cycle_slide {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 18px;
 }
-.layout-container .main-header .inner-main-header .menu-section .menu-container .region-primary-menu .menu_items .menu_item a {
-  text-decoration: none;
-  color: #000;
+.layout-container .main-header .inner-main-header .menu-section .skin-default .views_slideshow_cycle_slide .views-row {
+  margin-right: 30px;
+}
+.layout-container .main-header .inner-main-header .menu-section .skin-default .views-slideshow-controls-top {
+  margin-top: -18px;
+}
+.layout-container .main-header .inner-main-header .menu-section .views_slideshow_cycle_teaser_section {
+  width: 40rem;
+  height: 50px;
+}
+.layout-container .main-header .inner-main-header .menu-section .views_slideshow_cycle_teaser_section .views_slideshow_cycle_div_main_menus-block_1_1 {
+  height: auto;
+}
+
+.news-main {
+  position: relative;
+  top: 7rem;
+}
+
+.views-slideshow-controls-text-pause-processed {
+  display: none;
+}
+
+.views-slideshow-controls-text-previous-processed {
+  padding-right: 14px;
+}
+
+.views_slideshow_cycle_slide {
+  display: flex;
 }
 
 .footer-section {
@@ -753,12 +781,12 @@
 }
 
 .news-search {
-  margin-left: -2rem;
+  margin-left: -5.3rem;
   top: 10.6rem;
   border-top: 1px solid #ddd;
   display: flex;
   padding-top: 2rem;
-  width: 88%;
+  width: 100%;
   position: fixed;
   z-index: 2;
   overflow: auto;
