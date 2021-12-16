@@ -6,6 +6,7 @@ icecream-style:
       css/main.css: {weight: 10}
       css/layout.css: {weight: 10}
       css/mediaQueries.css: {weight: 10}
+      css/entertainment.css: {weight: 10}
   js:
     js/app.js: {weight: -10}
   dependencies:

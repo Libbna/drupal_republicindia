@@ -64,6 +64,15 @@
 
   .menu--shows {
     padding-left: 3rem;
+    @media only screen and (max-width: 768px) {
+      margin-left: 5rem;
+    }
+  }
+
+  .footer_menu_third {
+    @media only screen and (max-width: 768px) {
+      margin-right: 3rem;
+    }
   }
 
   .footer_menu_fourth {
@@ -177,7 +186,7 @@
   // static para
   .block-block-content5cd5669f-36ee-4928-a4e7-4884aa064b8a {
     padding: 10px;
-    top: -2.6rem;
+    margin-top: 5rem;
     left: -1rem;
 
     p {

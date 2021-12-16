@@ -29,66 +29,6 @@
   margin: 0 auto;
   position: relative;
 }
-.layout-container .main-header .inner-main-header .menu-section {
-  width: 100%;
-  position: relative;
-  top: -1.2rem;
-}
-.layout-container .main-header .inner-main-header .menu-section .menu-container {
-  padding-top: 10px;
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: -37px;
-  width: 100%;
-  max-width: 1200px;
-}
-.layout-container .main-header .inner-main-header .menu-section .menu-container .region-primary-menu {
-  width: 92%;
-  padding-bottom: 5px;
-  overflow: hidden;
-}
-.layout-container .main-header .inner-main-header .menu-section .skin-default {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-top: 10px;
-  align-items: center;
-  justify-content: space-between;
-}
-.layout-container .main-header .inner-main-header .menu-section .skin-default .views_slideshow_cycle_slide {
-  display: flex;
-  overflow: hidden;
-  padding-bottom: 18px;
-}
-.layout-container .main-header .inner-main-header .menu-section .skin-default .views_slideshow_cycle_slide .views-row {
-  margin-right: 30px;
-}
-.layout-container .main-header .inner-main-header .menu-section .skin-default .views-slideshow-controls-top {
-  margin-top: -18px;
-}
-.layout-container .main-header .inner-main-header .menu-section .views_slideshow_cycle_teaser_section {
-  width: 40rem;
-  height: 50px;
-}
-.layout-container .main-header .inner-main-header .menu-section .views_slideshow_cycle_teaser_section .views_slideshow_cycle_div_main_menus-block_1_1 {
-  height: auto;
-}
-
-.news-main {
-  position: relative;
-  top: 7rem;
-}
-
-.views-slideshow-controls-text-pause-processed {
-  display: none;
-}
-
-.views-slideshow-controls-text-previous-processed {
-  padding-right: 14px;
-}
-
-.views_slideshow_cycle_slide {
-  display: flex;
-}
 
 .footer-section {
   font-size: 14px;
@@ -150,6 +90,17 @@
 
 .menu--shows {
   padding-left: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .menu--shows {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_menu_third {
+    margin-right: 3rem;
+  }
 }
 
 .footer_menu_fourth {
@@ -246,7 +197,7 @@
 
 .block-block-content5cd5669f-36ee-4928-a4e7-4884aa064b8a {
   padding: 10px;
-  top: -2.6rem;
+  margin-top: 5rem;
   left: -1rem;
 }
 .block-block-content5cd5669f-36ee-4928-a4e7-4884aa064b8a p {
@@ -257,6 +208,10 @@
   text-align: justify;
 }
 
+.news-main {
+  position: relative;
+  top: 7rem;
+}
 .news-main .hero-banner {
   padding: 10px;
   background-color: #f8f8f8;
@@ -821,38 +776,47 @@
   width: 100%;
 }
 
-.block-views-blocksidebar-list-block-8 {
-  padding-top: 40px;
+.menu-section {
+  width: 100%;
+  position: relative;
+  top: -1.2rem;
 }
-.block-views-blocksidebar-list-block-8 h2 {
+.menu-section .menu-container {
+  padding-top: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -37px;
+  width: 100%;
+  max-width: 1200px;
+}
+.menu-section .menu-container .region-primary-menu {
+  width: 92%;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.menu-section .skin-default {
   display: flex;
+  flex-direction: row-reverse;
+  padding-top: 10px;
+  align-items: center;
   justify-content: space-between;
-  padding-bottom: 15px;
-  font-size: 25px;
-  line-height: 25px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: roboto, sans-serif;
-  margin: 0;
 }
-
-.entertainment-block {
-  display: flex;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  box-shadow: 2px 2px 10px rgba(221, 221, 221, 0.5);
+.menu-section .skin-default .views_slideshow_cycle_slide {
+  overflow: hidden;
+  padding-bottom: 18px;
 }
-.entertainment-block .views-col {
-  border-right: 1px solid #ddd;
-  padding: 0 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.menu-section .skin-default .views_slideshow_cycle_slide .views-row {
+  margin-right: 30px;
 }
-.entertainment-block .views-col .views-field-title .field-content {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  text-transform: none;
+.menu-section .skin-default .views-slideshow-controls-top {
+  margin-top: -18px;
+}
+.menu-section .views_slideshow_cycle_teaser_section {
+  width: 40rem;
+  height: 50px;
+}
+.menu-section .views_slideshow_cycle_teaser_section .views_slideshow_cycle_div_main_menus-block_1_1 {
+  height: auto;
 }
 
 * {
