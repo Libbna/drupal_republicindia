@@ -8,6 +8,7 @@ icecream-style:
       css/mediaQueries.css: {weight: 10}
       css/entertainment.css: {weight: 10}
       css/nation-wants.css: {weight: 10}
+      css/searchForm.css: {weight: 10}
   js:
     js/app.js: {weight: -10}
   dependencies:

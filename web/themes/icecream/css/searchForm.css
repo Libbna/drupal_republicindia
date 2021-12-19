@@ -1,0 +1,29 @@
+.region-content .search-form {
+  margin-top: -16rem;
+}
+.region-content .search-form label {
+  display: none;
+}
+.region-content .search-form input[type=search] {
+  padding: 12px 20px;
+  margin-left: 15rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 50%;
+}
+.region-content .search-form input[type=submit] {
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 13px 20px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #e52d27 0px, #d10014 49.87%, #b31217 100%);
+  box-shadow: rgba(15, 15, 15, 0.2) 2px 4px 8px;
+}
+
+.search-help-link, .search-advanced {
+  display: none;
+}
