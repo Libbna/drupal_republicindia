@@ -1,4 +1,4 @@
-(function ($) {
+
   $('.view-slideshow .view-content').slick({
     infinite: false,
     speed: 300,
@@ -29,4 +29,4 @@
 }
 ]
 });
-})(jQuery);
+

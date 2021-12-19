@@ -790,9 +790,7 @@
   max-width: 1200px;
 }
 .menu-section .menu-container .region-primary-menu {
-  width: 92%;
   padding-bottom: 5px;
-  overflow: hidden;
 }
 .menu-section .skin-default {
   display: flex;
@@ -819,8 +817,26 @@
   height: auto;
 }
 
-.slick--view--main-menus--block- {
-  height: 68px;
+.block-views-blockmain-menus-block-1 {
+  height: 46px;
+}
+.block-views-blockmain-menus-block-1 .view-display-id-block_1 {
+  margin-top: 1.5rem;
+}
+.block-views-blockmain-menus-block-1 .slick-list .field-content {
+  margin-left: 1.5rem;
+}
+
+.slick {
+  width: 89%;
+}
+
+.slick-prev {
+  left: 66rem;
+}
+
+.slick-next {
+  right: -6rem;
 }
 
 * {

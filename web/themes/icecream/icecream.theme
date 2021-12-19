@@ -36,8 +36,3 @@ function icecream_form_search_block_form_alter(&$form, &$form_state) {
       $form['keys']['#attributes']['placeholder'][] = t('Search here');
 }
 
-function icecream_preprocess_page(&$variables) {
-  if (Drupal::service('path.matcher')->isFrontPage() == 1) {
-    $variables['#attached']['library'][] = 'icecream/slick';
-  }
-}

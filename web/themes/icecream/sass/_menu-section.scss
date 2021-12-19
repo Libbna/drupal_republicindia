@@ -12,9 +12,7 @@
     max-width: 1200px;
 
     .region-primary-menu {
-      width: 92%;
       padding-bottom: 5px;
-      overflow: hidden;
     }
   }
 
@@ -50,6 +48,28 @@
   }
 }
 
-.slick--view--main-menus--block- {
-  height: 68px;
+.block-views-blockmain-menus-block-1 {
+  height: 46px;
+  .view-display-id-block_1 {
+    margin-top: 1.5rem;
+  }
+
+  .slick-list {
+    .field-content {
+      margin-left: 1.5rem;
+    }
+  }
 }
+
+.slick {
+  width: 89%;
+}
+
+.slick-prev {
+  left: 66rem;
+}
+.slick-next {
+  right: -6rem;
+}
+
+
