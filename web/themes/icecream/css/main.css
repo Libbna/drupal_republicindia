@@ -548,7 +548,7 @@
 }
 
 .menu--left-sub-menu {
-  padding-top: 5.5rem;
+  padding-top: 3.5rem;
   width: 17%;
 }
 .menu--left-sub-menu .menu_items {
@@ -587,7 +587,7 @@
 }
 
 .sub_Menu {
-  padding-top: 5.5rem;
+  padding-top: 3.5rem;
   width: 83%;
   height: 554px;
   overflow: auto;
@@ -737,7 +737,7 @@
 
 .news-search {
   margin-left: -5.3rem;
-  top: 10.6rem;
+  top: 11.6rem;
   border-top: 1px solid #ddd;
   display: flex;
   padding-top: 2rem;

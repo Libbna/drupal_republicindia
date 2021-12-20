@@ -33,7 +33,7 @@ function icecream_form_search_block_form_alter(&$form, &$form_state) {
 }
 
 // search result
-function icecream_preprocess_search_result(&$variables) {
+function icecream_preprocess_search_result(&$variables, &$form_id) {
   $node = $variables['result']['node'];
 
   if($node->field_news_image !== NULL) {
