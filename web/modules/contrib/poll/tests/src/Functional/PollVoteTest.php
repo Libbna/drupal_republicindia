@@ -222,4 +222,65 @@ class PollVoteTest extends PollTestBase {
     $this->assertText(t('Total votes: @votes', array('@votes' => 3)));
   }
 
+  /**
+   * Tests switching between viewing the poll and the poll results.
+   */
+  public function testViewPollAndPollResultsAsAuthenticatedUser() {
+    $this->poll->setResultVoteAllow(TRUE);
+    $this->poll->save();
+
+    // Login as user who may vote.
+    $this->drupalLogin($this->web_user);
+
+    // Go the poll form.
+    $this->drupalGet('poll/' . $this->poll->id());
+
+    // View the results.
+    $this->drupalPostForm(NULL, [], 'View results');
+    $this->assertSession()->pageTextContains('Total votes: 0');
+
+    // Go back to the poll.
+    // @todo button 'View poll' should appear.
+    $this->drupalGet('poll/' . $this->poll->id());
+
+    // And vote.
+    $edit = [
+      'choice' => '1',
+    ];
+    $this->drupalPostForm(NULL, $edit, 'Vote');
+    $this->assertSession()->pageTextContains('Your vote has been recorded.');
+    $this->assertSession()->pageTextContains('Total votes: 1');
+  }
+
+  /**
+   * Tests switching between viewing the poll and the poll results.
+   */
+  public function testViewPollAndPollResultsAsAnonymousUser() {
+    // Grant anonymous users permission to vote.
+    user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, ['cancel own vote', 'access polls']);
+    $this->poll->setAnonymousVoteAllow(TRUE)
+      ->setResultVoteAllow(TRUE)
+      ->save();
+
+    $this->drupalLogout();
+
+    // Go the poll form.
+    $this->drupalGet('poll/' . $this->poll->id());
+
+    // View the results.
+    $this->drupalPostForm(NULL, [], 'View results');
+    $this->assertSession()->pageTextContains('Total votes: 0');
+
+    // Go back to the poll.
+    $this->drupalPostForm(NULL, [], 'View poll');
+
+    // And vote.
+    $edit = [
+      'choice' => '1',
+    ];
+    $this->drupalPostForm(NULL, $edit, 'Vote');
+    $this->assertSession()->pageTextContains('Your vote has been recorded.');
+    $this->assertSession()->pageTextContains('Total votes: 1');
+  }
+
 }

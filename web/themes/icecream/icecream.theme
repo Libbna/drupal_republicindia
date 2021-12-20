@@ -1,13 +1,8 @@
 <?php
 
-// function icecream_preprocess_field (&$variables) {
-//   if ($variables['logged_in'] == TRUE && $variables['field']->getOwnerId() == $variables['user']->id()) {
-//   $variables['field__item']['suffix'] = 'TOP NEWS';
-//   }
-// }
+// use function Drupal\Tests\Core\Asset\file_create_url;
 
-// use Drupal\Core\Form\FormStateInterface;
-
+// use function Drupal\Tests\Core\Asset\file_create_url;
 
 function icecream_preprocess_node (&$variables) {
   $variables['current_user_is_owner'] = FALSE;
@@ -32,7 +27,17 @@ function icecream_preprocess_block(&$variables) {
   $variables['today'] = date('H:i, m-d-Y');
 }
 
+// search-form block
 function icecream_form_search_block_form_alter(&$form, &$form_state) {
       $form['keys']['#attributes']['placeholder'][] = t('Search here');
 }
 
+// search result
+function icecream_preprocess_search_result(&$variables) {
+  $node = $variables['result']['node'];
+
+  if($node->field_news_image !== NULL) {
+    $uri =  $node->field_news_image->entity->getFileUri();
+    $variables['news_img'] = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
+  }
+}

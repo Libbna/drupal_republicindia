@@ -214,11 +214,8 @@ function hook_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_stat
     // Add a custom submit handler to save the array of types back to the config file.
     $form['actions']['submit']['#submit'][] = 'mymodule_upload_enabled_types_submit';
   }
-  if ($form_id == 'search-block-form') {
-
-    $form['basic']['keys']['#placeholder'] = 'Search Form';
-  }
 }
+
 /**
  * Provide a form-specific alteration instead of the global hook_form_alter().
  *
@@ -333,5 +330,3 @@ function hook_batch_alter(&$batch) {
 /**
  * @} End of "addtogroup hooks".
  */
-
-

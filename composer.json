@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^9.2",
         "drupal/devel": "^4.1",
         "drupal/poll": "^1.4",
+        "drupal/social_auth": "^3.0",
         "drupal/webform": "^6.1",
         "kint-php/kint": "^3.3"
     },

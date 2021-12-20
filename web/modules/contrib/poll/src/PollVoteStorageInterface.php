@@ -55,7 +55,9 @@ interface PollVoteStorageInterface {
    *
    * @param PollInterface $poll
    *
-   * @return mixed
+   * @return array|false
+   *   An array of the user's vote values, or false if the current user hasn't
+   *   voted yet.
    */
   public function getUserVote(PollInterface $poll);
 
