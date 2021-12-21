@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e558d4532e2285c5ead34affe95c84ceae01d4c8',
+        'reference' => '5fddc909a2dc6c57ba2a297e1b2eab4ebd9f3b88',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -811,7 +811,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e558d4532e2285c5ead34affe95c84ceae01d4c8',
+            'reference' => '5fddc909a2dc6c57ba2a297e1b2eab4ebd9f3b88',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1614,6 +1614,15 @@
             'install_path' => __DIR__ . '/../symfony/yaml',
             'aliases' => array(),
             'reference' => '2c309e258adeb9970229042be39b360d34986fad',
+            'dev_requirement' => false,
+        ),
+        'twig/extensions' => array(
+            'pretty_version' => 'v1.5.4',
+            'version' => '1.5.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twig/extensions',
+            'aliases' => array(),
+            'reference' => '57873c8b0c1be51caa47df2cdb824490beb16202',
             'dev_requirement' => false,
         ),
         'twig/twig' => array(

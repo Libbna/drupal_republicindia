@@ -35,9 +35,19 @@ function icecream_form_search_block_form_alter(&$form, &$form_state) {
 // search result
 function icecream_preprocess_search_result(&$variables, &$form_id) {
   $node = $variables['result']['node'];
+  // Kint($node->getCreatedTime());
 
   if($node->field_news_image !== NULL) {
     $uri =  $node->field_news_image->entity->getFileUri();
     $variables['news_img'] = \Drupal::service('file_url_generator')->generateAbsoluteString($uri);
   }
+
+  $time = Drupal::time()->getRequestTime();
+
+  $date = $node->getCreatedTime();
+  $variables['created'] = \Drupal::service('date.formatter')->formatInterval($time - $date);
+  $variables['submitted'] = t('!datetime' . '' . $variables['created'] . ' ago ');
+
+  // Kint($time, $date);
+
 }

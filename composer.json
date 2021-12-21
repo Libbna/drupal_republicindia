@@ -23,7 +23,8 @@
         "drupal/poll": "^1.4",
         "drupal/social_auth": "^3.0",
         "drupal/webform": "^6.1",
-        "kint-php/kint": "^3.3"
+        "kint-php/kint": "^3.3",
+        "twig/extensions": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"

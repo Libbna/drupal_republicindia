@@ -747,7 +747,7 @@
   overflow: auto;
   background: white;
 }
-.news-search .button {
+.news-search input[type=submit] {
   background: rgba(128, 128, 128, 0.5);
   border: none;
   cursor: not-allowed;
@@ -760,7 +760,7 @@
   font-weight: 700;
 }
 .news-search input[type=search] {
-  padding: 12px 20px;
+  padding: 12px 47px;
   margin: auto 0;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -774,6 +774,13 @@
 }
 .news-search #search-block-form {
   width: 100%;
+}
+.news-search .fa-search {
+  font-size: 1.2rem;
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 13px;
+  color: dimgrey;
 }
 
 .menu-section {

@@ -5,7 +5,7 @@
   display: none;
 }
 .region-content .search-form input[type=search] {
-  padding: 12px 20px;
+  padding: 12px 47px;
   margin-left: 15rem;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -22,6 +22,13 @@
   font-weight: 700;
   background: linear-gradient(90deg, #e52d27 0px, #d10014 49.87%, #b31217 100%);
   box-shadow: rgba(15, 15, 15, 0.2) 2px 4px 8px;
+}
+.region-content .search-form .fa-search {
+  font-size: 1.2rem;
+  position: absolute;
+  margin-left: 16rem;
+  margin-top: 13px;
+  color: dimgrey;
 }
 
 .search-help-link, .search-advanced {
@@ -80,4 +87,8 @@
 .news-search-result .search-result__snippet-info .search-result__snippet {
   margin: 0;
   font-size: 0.8em;
+  white-space: nowrap;
+}
+.news-search-result .search-result__info {
+  font-size: 11px;
 }

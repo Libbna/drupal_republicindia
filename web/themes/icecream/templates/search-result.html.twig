@@ -75,9 +75,10 @@
         <p{{content_attributes.addClass('search-result__snippet')}}>{{ snippet }}</p>
       {% endif %}
       {% if info %}
-        <p class="search-result__info">{{ info }}</p>
+        <p class="search-result__info">{{ created }} {{ 'ago'|t }}</p>
       {% endif %}
     </div>
   </div>
 
 </div>
+
