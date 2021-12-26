@@ -5,6 +5,7 @@
   display: none;
 }
 .region-content .search-form input[type=search] {
+  margin: 0;
   padding: 12px 47px;
   margin-left: 15rem;
   border: 1px solid #ddd;
@@ -30,6 +31,15 @@
   margin-top: 13px;
   color: dimgrey;
 }
+@media only screen and (max-width: 768px) {
+  .region-content .search-form #edit-basic {
+    margin-left: -5rem;
+    display: flex;
+  }
+  .region-content .search-form #edit-basic .form-type-search {
+    margin: 0;
+  }
+}
 
 .search-help-link, .search-advanced {
   display: none;
@@ -39,6 +49,11 @@
   font-weight: normal !important;
   font-size: 0.8em;
   margin-left: 15.1rem;
+}
+@media only screen and (max-width: 768px) {
+  .search-wrapper h2 {
+    margin-left: 10.1rem;
+  }
 }
 .search-wrapper .item-list {
   width: 72.5%;
@@ -74,8 +89,15 @@
   height: 111px;
   border-radius: 4px;
 }
+@media only screen and (max-width: 768px) {
+  .news-search-result .search_img img {
+    height: auto;
+    width: 125px;
+  }
+}
 .news-search-result .news-search-info {
   width: 75%;
+  padding-left: 10px;
 }
 .news-search-result .search-result__title {
   margin: 0;

@@ -1,0 +1,72 @@
+.block-views-blockcontent-news-block-2 h2 {
+  text-transform: uppercase;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 {
+  display: flex;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .view-content {
+  margin-right: 20px;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 10px rgba(221, 221, 221, 0.5);
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .views-col {
+  width: 100% !important;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .views-col .political-title {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .views-col .political-title a {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .col-2, .block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .col-3 {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .col-2 img, .block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .col-3 img {
+  display: none;
+}
+.block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .col-2 .political-title a, .block-views-blockcontent-news-block-2 .view-display-id-block_2 .row-1 .col-3 .political-title a {
+  font-size: 16px;
+}
+
+.attachment-after {
+  display: flex;
+}
+
+.political-centre .view-content .row-1 img {
+  display: block !important;
+}
+.political-centre .view-content .row-1 .views-col {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  height: 8.7rem;
+}
+.political-centre .view-content .row-1 .political-title {
+  padding: 0 0 0 10px !important;
+}
+.political-centre .view-content .row-1 .political-title a {
+  font-size: 16px !important;
+  line-height: 19px !important;
+  width: 13rem;
+}
+
+.political-right .view-content .row-1 img {
+  display: block !important;
+}
+.political-right .political-title {
+  height: 7.5rem;
+}
+.political-right .political-title a {
+  font-size: 16px !important;
+  line-height: 19px !important;
+}

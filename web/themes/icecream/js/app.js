@@ -21,27 +21,42 @@ bars.onclick = function () {
 }
 
 // When the user clicks on close button, close the modal
-closeBtn.onclick = function() {
+closeBtn.onclick = function () {
   subMenu.style.display = "none";
   bars.style.display = "block";
   closeBtn.style.display = "none";
 }
 
-// disabled submit btn when the input == " "
-var inputSearch = document.querySelector(".form-search");
-// console.log(inputSearch);
-var submitBtn = document.querySelector(".js-form-submit");
+  // Drupal Behaviour
 
-// submitBtn.disabled = true;
+  // (function ($, Drupal) {
+  //   Drupal.behaviors.icecreamBehavior = {
+  //     attach: function (context) {
 
-// console.log(submitBtn);
+  //       var inputSearch = $(".form-search");
+  //       // var submitBtn = $(".js-form-submit");
 
-inputSearch.addEventListener("change", stateHandle);
+  //       $(".js-form-submit").disabled = true;
 
-function stateHandle() {
-    if(inputSearch.value === "" ) {
-      submitBtn.disabled = true;
-    } else {
-      submitBtn.disabled = false;
-    }
-}
+  //       inputSearch.addEventListener('change', function () {
+  //         if (inputSearch.value.length > 0) {
+  //           submitBtn.disabled = false;
+  //         } else {
+  //           submitBtn.disabled = true;
+  //         }
+  //       });
+  //     }
+  //   }
+  // });
+
+// function ($, Drupal) {
+
+//   // My custom JavaScript code ...
+//   Drupal.behaviors.icecreamBehavior = {
+//     attach: function attach(context) {
+//       $(".js-form-submit").disabled = true;
+//     },
+//   }
+// } (jQuery, Drupal);
+
+

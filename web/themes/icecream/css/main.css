@@ -984,6 +984,7 @@ body {
 .news-main .homepage-wrapper .region-content .block-views-blocksidebar-list-block-6 {
   display: flex;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 .news-main .homepage-wrapper .region-content .block-views-blocksidebar-list-block-6 .view-display-id-block_6 .view-content .views-row {
   display: flex;

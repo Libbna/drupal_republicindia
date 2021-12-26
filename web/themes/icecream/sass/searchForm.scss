@@ -5,6 +5,7 @@
       display: none;
     }
     input[type="search"] {
+      margin: 0;
       padding: 12px 47px;
       margin-left: 15rem;
       border: 1px solid #ddd;
@@ -30,6 +31,18 @@
       margin-top: 13px;
       color: dimgrey;
     }
+
+    #edit-basic {
+     @media only screen and (max-width: 768px) {
+       margin-left: -5rem;
+       display: flex;
+
+
+       .form-type-search {
+         margin: 0;
+       }
+     }
+    }
   }
 }
 
@@ -42,6 +55,10 @@
     font-weight: normal !important;
     font-size: .8em;
     margin-left: 15.1rem;
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 10.1rem;
+    }
   }
 
   .item-list {
@@ -78,11 +95,16 @@
       width: 200px;
       height: 111px;
       border-radius: 4px;
+      @media only screen and (max-width: 768px) {
+        height: auto;
+        width: 125px;
+      }
     }
   }
 
   .news-search-info{
     width: 75%;
+    padding-left: 10px;
   }
   .search-result__title {
     margin: 0;
