@@ -1,0 +1,25 @@
+.block-block-content607532b7-df84-4db5-8757-40cd4955c969 {
+  display: flex;
+  flex-direction: row-reverse;
+  bottom:-10px;
+  left: 6rem;
+  height: 1.4rem;
+
+  @media only screen and (max-width: 768px) {
+    left: 0;
+  }
+  img {
+    width: 30px;
+    height: 20px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-left: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+

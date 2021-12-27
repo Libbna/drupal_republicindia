@@ -1,0 +1,124 @@
+.region-content {
+  .search-form {
+    margin-top: -16rem;
+    label {
+      display: none;
+    }
+    input[type="search"] {
+      margin: 0;
+      padding: 12px 47px;
+      margin-left: 15rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 50%;
+    }
+    input[type="submit"] {
+      border: none;
+      border-radius: 5px;
+      margin-left: 20px;
+      color: white;
+      text-align: center;
+      font-size: 16px;
+      padding: 13px 20px;
+      font-weight: 700;
+      background: linear-gradient(90deg, rgba(229, 45, 39) 0px, rgba(209, 0, 20) 49.87%, rgba(179, 18, 23) 100%);
+      box-shadow: rgb(15 15 15 / 20%) 2px 4px 8px;
+    }
+    .fa-search {
+      font-size: 1.2rem;
+      position: absolute;
+      margin-left: 16rem;
+      margin-top: 13px;
+      color: dimgrey;
+    }
+
+    #edit-basic {
+     @media only screen and (max-width: 768px) {
+       margin-left: -5rem;
+       display: flex;
+
+
+       .form-type-search {
+         margin: 0;
+       }
+     }
+    }
+  }
+}
+
+.search-help-link, .search-advanced {
+  display: none;
+}
+
+.search-wrapper {
+  h2 {
+    font-weight: normal !important;
+    font-size: .8em;
+    margin-left: 15.1rem;
+
+    @media only screen and (max-width: 768px) {
+      margin-left: 10.1rem;
+    }
+  }
+
+  .item-list {
+    width: 72.5%;
+    padding-top: 30px;
+    margin: auto;
+  }
+  .search-results {
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+
+    li {
+      padding-top: 15px;
+    }
+  }
+}
+
+.news-search-result {
+  border-bottom: 1px solid #ddd;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .search_img {
+    width: 25%;
+    padding-right: 15px;
+    margin-top: -1.5rem;
+    margin-right: 1rem;
+    img {
+      width: 200px;
+      height: 111px;
+      border-radius: 4px;
+      @media only screen and (max-width: 768px) {
+        height: auto;
+        width: 125px;
+      }
+    }
+  }
+
+  .news-search-info{
+    width: 75%;
+    padding-left: 10px;
+  }
+  .search-result__title {
+    margin: 0;
+    font-size: 16px;
+  }
+  .search-result__snippet-info {
+    padding: 15px 0px;
+    .search-result__snippet {
+      margin: 0;
+      font-size: .8em;
+      white-space: nowrap;
+    }
+  }
+  .search-result__info {
+    font-size: 11px;
+  }
+}
