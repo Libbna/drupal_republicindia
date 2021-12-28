@@ -11,16 +11,21 @@
   background: white;
 
   input[type="submit"] {
-    background: rgba(128, 128, 128, 0.5);
     border: none;
-    cursor: not-allowed;
     border-radius: 5px;
     margin-left: 20px;
-    color: white;
     text-align: center;
     font-size: 16px;
-    padding: 13px 20px;
     font-weight: 700;
+    background: linear-gradient(90deg, rgba(229, 45, 39) 0px, rgba(209, 0, 20) 49.87%, rgba(179, 18, 23) 100%);
+    box-shadow: rgb(15 15 15 / 20%) 2px 4px 8px;
+    padding: 13px 20px;
+    color: white;
+
+    &:disabled {
+      background: rgba(128, 128, 128, 0.5);
+      cursor: not-allowed;
+    }
   }
 
   input[type="search"] {

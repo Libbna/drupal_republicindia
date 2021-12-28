@@ -10,8 +10,10 @@ icecream-style:
       css/nation-wants.css: {weight: 10}
       css/searchForm.css: {weight: 10}
       css/politicalNews.css: {weight: 10}
+      css/breadcrumbs.css: {weight: 10}
   js:
     js/app.js: {weight: -10}
+    js/custom.js: {weight: -10}
   dependencies:
     - core/jquery
 bootstrap:

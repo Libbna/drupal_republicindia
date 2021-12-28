@@ -1,21 +1,23 @@
 // partials
-@import "./variables";
-@import "./mixins";
-@import "./header";
-@import "./footer";
-@import "./hero-banner";
-@import "./covidStats";
-@import "./web-stories";
-@import "./language-switcher";
-@import "./_live-tv";
-@import "./bars-icon";
-@import "./_search-icon";
-@import "./sub-menu";
-@import "./close";
-@import "./the-debate";
-@import "./poll";
-@import "./search-form";
-@import "./menu-section";
+@import "./abstracts/variables";
+@import "./abstracts//mixins";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./components/hero-banner";
+@import "./components/covidStats";
+@import "./components/web-stories";
+@import "./components/language-switcher";
+@import "./components/live-tv";
+@import "./components/bars-icon";
+@import "./components/search-icon";
+@import "./layouts/sub-menu";
+@import "./components/close";
+@import "./components/the-debate";
+@import "./components/poll";
+@import "./layouts/searchForm.scss";
+@import "./layouts/search-form";
+@import "./layouts/menu-section";
+@import "./components/must-read";
 // layout - html
 * {
   box-sizing: border-box;
@@ -78,6 +80,12 @@ img {
 //     }
 //   }
 // }
+
+.republic-dom {
+  @include breakMax(sm) {
+    margin-top: 2.6rem;
+  }
+}
 
 .news-main {
   width: 100%;

@@ -65,10 +65,32 @@
   width: 89%;
 }
 
+.slick-arrow {
+  background: black;
+  height: 0.9rem;
+  width: 0.9rem;
+  font-weight: 600;
+}
+
 .slick-prev {
-  left: 66rem;
+  left: 69rem;
   @include breakMax(sm) {
     left: 39rem;
+  }
+  &::before {
+    font-size: 1.25rem;
+    position: relative;
+    left: -3px;
+    top: -2px;
+    opacity: 1;
+    color: white;
+  }
+
+  &:hover {
+    background: black;
+    &::before {
+      color: white;
+    }
   }
 }
 .slick-next {
@@ -76,6 +98,21 @@
   // @include breakMax(sm) {
   //   right: -4rem;
   // }
+  &::before {
+    font-size: 1.25rem;
+    position: relative;
+    left: -3px;
+    top: -2px;
+    opacity: 1;
+    color: white;
+  }
+  &:hover {
+    background: black;
+
+    &::before {
+      color: white;
+    }
+  }
 }
 
 

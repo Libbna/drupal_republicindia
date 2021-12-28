@@ -51,3 +51,4 @@ function icecream_preprocess_search_result(&$variables, &$form_id) {
   // Kint($time, $date);
 
 }
+
