@@ -5,6 +5,9 @@
   @media only screen and (max-width: 768px) {
     left: 0;
   }
+   @include breakMax(sm) {
+     top: -0.2rem;
+   }
 }
 
 .fa-bars {

@@ -67,9 +67,15 @@
 
 .slick-prev {
   left: 66rem;
+  @include breakMax(sm) {
+    left: 39rem;
+  }
 }
 .slick-next {
   right: -6rem;
+  // @include breakMax(sm) {
+  //   right: -4rem;
+  // }
 }
 
 

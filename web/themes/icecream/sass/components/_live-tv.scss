@@ -8,6 +8,9 @@
   @media only screen and (max-width: 768px) {
     left: 0;
   }
+  @include breakMax(sm) {
+    left: 2px;
+  }
   img {
     width: 30px;
     height: 20px;

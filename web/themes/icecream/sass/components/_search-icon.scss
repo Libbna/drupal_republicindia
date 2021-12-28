@@ -5,6 +5,9 @@
   @media only screen and (max-width: 768px) {
     right: 1rem;
   }
+   @include breakMax(sm) {
+     right: -0.5rem;
+   }
   img {
     width: 24px;
     cursor: pointer;
