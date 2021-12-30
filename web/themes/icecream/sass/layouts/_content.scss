@@ -99,7 +99,64 @@
       strong {
         font-size: 22.5px;
         text-align: justify;
-}
+      }
+    }
+    blockquote {
+      p {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: Roboto;
+        font-weight: 600;
+        font-style: italic;
+        text-align: justify;
+        padding-bottom: 10px;
+
+        @include breakMin(xl) {
+          font-size: 22px;
+          line-height: 26px;
+          padding: 0 0 10px 0;
+        }
+        @include breakMin(xxl) {
+          font-size: 22px;
+          line-height: 26px;
+          padding: 0 0 10px 0;
+        }
+      }
+      &::before {
+        content: open-quote;
+        left: 52px;
+        top: 73.2rem;
+        position: absolute;
+        line-height: 38px;
+        font-style: normal;
+        font-weight: 700;
+        color: #d10014;
+        font-size: 48px;
+
+        @include breakMin(md) {
+          left: 3rem;
+          top: 57.2rem;
+        }
+      }
+      &::after {
+        content: close-quote;
+        right: 3.1rem;
+        bottom: 24.2rem;
+        position: absolute;
+        line-height: 38px;
+        font-style: normal;
+        font-weight: 700;
+        color: #d10014;
+        font-size: 48px;
+
+        @include breakMin(md) {
+          right: 4.1rem;
+          bottom: 10.2rem;
+        }
+        @include breakMin(xl) {
+          right: 3.1rem;
+        }
+      }
     }
   }
   @include breakMin(xl) {
