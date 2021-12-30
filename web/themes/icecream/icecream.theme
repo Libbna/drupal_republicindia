@@ -7,12 +7,14 @@
 function icecream_preprocess_node (&$variables) {
   $variables['current_user_is_owner'] = FALSE;
 
+  // Kint($variables['node']);
+  // Kint($variables['node']->get('field_news_image')->entity);
+  // Kint($variables['node']->get('title')->value);
+
   if ($variables['logged_in'] == TRUE && $variables['node']->getOwnerId() == $variables['user']->id()) {
     $variables['current_user_is_owner'] = TRUE;
   }
-
-  $date = $variables['node']->getCreatedTime();
-  $variables['date'] = \Drupal::service('date.formatter')->format($date, 'new_date');
+  $variables['news_title'] = $variables['node']->get('title')->value;
 }
 
 function icecream_theme_suggestions_node_alter (array &$suggestions, array $variables) {
@@ -48,7 +50,7 @@ function icecream_preprocess_search_result(&$variables, &$form_id) {
   $variables['created'] = \Drupal::service('date.formatter')->formatInterval($time - $date);
   $variables['submitted'] = t('!datetime' . '' . $variables['created'] . ' ago ');
 
-  // Kint($time, $date);
+  // Kint($variables['created']);
 
 }
 

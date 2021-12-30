@@ -11,7 +11,7 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -21,9 +21,12 @@
         "drupal/core-recommended": "^9.2",
         "drupal/devel": "^4.1",
         "drupal/poll": "^1.4",
+        "drupal/slick": "^2.4",
         "drupal/social_auth": "^3.0",
         "drupal/webform": "^6.1",
         "kint-php/kint": "^3.3",
+        "npm-asset/blazy": "^1.8.2",
+        "oomphinc/composer-installers-extender": "^2.0",
         "twig/extensions": "^1.5"
     },
     "conflict": {

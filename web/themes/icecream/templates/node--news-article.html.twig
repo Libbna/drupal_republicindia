@@ -71,10 +71,6 @@
  */
 #}
 
-{# {{ kint(_context) }} #}
-
-
-
 {%
   set classes = [
     'node',
@@ -86,6 +82,11 @@
     current_user_is_owner ? 'current-user-is-owner',
   ]
 %}
+{% set date = node.createdtime|date('jS F, Y, H:i') %}
+
+{# 29th December, 2021 17:28 #}
+
+
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
@@ -108,6 +109,8 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
+  <span class="time-elapsed"> {{'Last Updated: '}} {{date}} {{'IST'}} </span>
+  <h2 class="news_title"> {{ news_title }} </h2>
     {{ content }}
   </div>
 

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '5fddc909a2dc6c57ba2a297e1b2eab4ebd9f3b88',
+        'reference' => '334d892617abb8f00c9398db388a782b8cc7fd32',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -258,6 +258,15 @@
             'replaced' => array(
                 0 => '9.3.0',
             ),
+        ),
+        'drupal/blazy' => array(
+            'pretty_version' => '2.5.0',
+            'version' => '2.5.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/blazy',
+            'aliases' => array(),
+            'reference' => '8.x-2.5',
+            'dev_requirement' => false,
         ),
         'drupal/block' => array(
             'dev_requirement' => false,
@@ -811,7 +820,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '5fddc909a2dc6c57ba2a297e1b2eab4ebd9f3b88',
+            'reference' => '334d892617abb8f00c9398db388a782b8cc7fd32',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -855,6 +864,15 @@
             'replaced' => array(
                 0 => '9.3.0',
             ),
+        ),
+        'drupal/slick' => array(
+            'pretty_version' => '2.4.0',
+            'version' => '2.4.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick',
+            'aliases' => array(),
+            'reference' => '8.x-2.4',
+            'dev_requirement' => false,
         ),
         'drupal/social_api' => array(
             'pretty_version' => '3.0.2',
@@ -1137,6 +1155,24 @@
             'aliases' => array(),
             'reference' => '210577fe3cf7badcc5814d99455df46564f3c077',
             'dev_requirement' => true,
+        ),
+        'npm-asset/blazy' => array(
+            'pretty_version' => '1.8.2',
+            'version' => '1.8.2.0',
+            'type' => 'npm-asset',
+            'install_path' => __DIR__ . '/../npm-asset/blazy',
+            'aliases' => array(),
+            'reference' => NULL,
+            'dev_requirement' => false,
+        ),
+        'oomphinc/composer-installers-extender' => array(
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../oomphinc/composer-installers-extender',
+            'aliases' => array(),
+            'reference' => 'cbf4b6f9a24153b785d09eee755b995ba87bd5f9',
+            'dev_requirement' => false,
         ),
         'orno/di' => array(
             'dev_requirement' => true,

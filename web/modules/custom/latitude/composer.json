@@ -1,0 +1,11 @@
+{
+    "name": "libbna/latitude",
+    "description": "demo module",
+    "type": "drupal-module",
+    "autoload": {
+        "psr-4": {
+            "Libbna\\Latitude\\": "src/"
+        }
+    },
+    "require": {}
+}

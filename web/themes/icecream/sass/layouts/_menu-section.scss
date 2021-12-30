@@ -92,12 +92,13 @@
       color: white;
     }
   }
+  &:focus {
+    background: black;
+  }
 }
 .slick-next {
   right: -6rem;
-  // @include breakMax(sm) {
-  //   right: -4rem;
-  // }
+
   &::before {
     font-size: 1.25rem;
     position: relative;
@@ -112,6 +113,9 @@
     &::before {
       color: white;
     }
+  }
+  &:focus {
+    background: black;
   }
 }
 
