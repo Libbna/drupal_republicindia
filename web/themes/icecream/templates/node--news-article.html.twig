@@ -84,8 +84,6 @@
 %}
 {% set date = node.createdtime|date('jS F, Y, H:i') %}
 
-{# 29th December, 2021 17:28 #}
-
 
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
@@ -113,5 +111,6 @@
   <h2 class="news_title"> {{ news_title }} </h2>
     {{ content }}
   </div>
+  <span class="time-elapsed-2">	{{'First Published: '}} {{date}} {{'IST'}} </span>
 
 </article>

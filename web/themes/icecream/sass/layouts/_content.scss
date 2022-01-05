@@ -7,7 +7,7 @@
 
 .node--type-news-article {
   width: 100%;
-  padding: 20px 10px 0 10px;
+  // padding: 20px 10px 0 10px;
   margin-top: -10rem;
   background: #fff;
   .field--name-field-summary {
@@ -31,6 +31,23 @@
     font-style: normal;
     font-size: 14px;
     line-height: 16px;
+  }
+  .time-elapsed-2 {
+    position: absolute;
+    top: 199.5rem;
+    left: 1.3rem;
+    padding-top: 20px;
+    font-size: 14px;
+
+    @include breakMin(md) {
+      top: 119.5rem;
+    }
+
+    @include breakMin(xl) {
+      top: 123rem;
+      left: 1.3rem;
+      font-size: 12px;
+    }
   }
   .news_title {
     font-family: Roboto !important;
@@ -83,16 +100,18 @@
       margin-top: 1rem;
     }
     p {
-      padding: 0 0 10px 0;
-      margin: 0;
-      line-height: 22px;
-      font-size: 20px;
-      font-family: Merriweather;
-      text-align: justify;
+      &:nth-child(1) {
+        padding: 0 0 10px 0;
+        margin: 0;
+        line-height: 22px;
+        font-size: 20px;
+        font-family: Roboto;
+        text-align: justify;
 
-      @include breakMin(xl) {
-        font-size: 16px;
-        line-height: 25px;
+        @include breakMin(xl) {
+          font-size: 22px;
+          line-height: 25px;
+        }
       }
     }
     h2 {
@@ -103,30 +122,33 @@
     }
     blockquote {
       p {
-        font-size: 16px;
-        line-height: 19px;
-        font-family: Roboto;
-        font-weight: 600;
-        font-style: italic;
-        text-align: justify;
-        padding-bottom: 10px;
+        &:nth-child(1) {
+           font-size: 16px;
+           line-height: 19px;
+           font-family: Roboto, sans-serif ;
+           font-weight: 600;
+           font-style: italic;
+           text-align: justify;
+           padding-bottom: 10px;
 
-        @include breakMin(xl) {
-          font-size: 22px;
-          line-height: 26px;
-          padding: 0 0 10px 0;
-        }
-        @include breakMin(xxl) {
-          font-size: 22px;
-          line-height: 26px;
-          padding: 0 0 10px 0;
-        }
+           @include breakMin(xl) {
+             font-size: 22px;
+             line-height: 26px;
+             padding: 0 0 10px 0;
+           }
+
+           @include breakMin(xxl) {
+             font-size: 22px;
+             line-height: 26px;
+             padding: 0 0 10px 0;
+           }
+         }
       }
       &::before {
         content: open-quote;
-        left: 52px;
-        top: 73.2rem;
-        position: absolute;
+        left: -1.5rem;
+        top: 2.2rem;
+        position: relative;
         line-height: 38px;
         font-style: normal;
         font-weight: 700;
@@ -134,15 +156,19 @@
         font-size: 48px;
 
         @include breakMin(md) {
-          left: 3rem;
-          top: 57.2rem;
+          left: -2rem;
+          top: 2.2rem;
         }
+         @include breakMin(xl) {
+           left: -2rem;
+           top: 2.2rem;
+         }
       }
       &::after {
         content: close-quote;
-        right: 3.1rem;
-        bottom: 24.2rem;
-        position: absolute;
+        right: -11.9rem;
+        bottom: 1.7rem;
+        position: relative;
         line-height: 38px;
         font-style: normal;
         font-weight: 700;
@@ -150,14 +176,144 @@
         font-size: 48px;
 
         @include breakMin(md) {
-          right: 4.1rem;
-          bottom: 10.2rem;
+          right: -38rem;
+          bottom: 1.5rem;
         }
         @include breakMin(xl) {
-          right: 3.1rem;
+          right: -43rem;
+          bottom: 1.9rem;
         }
       }
     }
+
+    p {
+      &:nth-child(4) {
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-family: Merriweather;
+        text-align: justify;
+        font-size: 17px;
+        @include breakMin(md) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        @include breakMin(xl) {
+          // padding-bottom: 4rem;
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    p {
+      &:nth-child(5) {
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+
+        a {
+          color: #e60000;
+        }
+        @include breakMin(xl) {
+          // padding-bottom: 4rem;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    h3 {
+      line-height: 22px;
+      font-size: 17.55px;
+    }
+    p {
+      &:nth-child(7) {
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 17px;
+        font-family: Merriweather;
+        text-align: justify;
+        line-height: 22px;
+      }
+    }
+    p {
+      &:nth-child(8) {
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+
+        a {
+          color: #e60000;
+        }
+
+        @include breakMin(xl) {
+          // padding-bottom: 4rem;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+    p {
+      &:nth-child(9) {
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 17px;
+        font-family: Merriweather;
+        text-align: justify;
+        line-height: 22px;
+      }
+    }
+
+    p {
+      &:nth-child(10) {
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+
+        a {
+          color: #e60000;
+        }
+
+        @include breakMin(xl) {
+          // padding-bottom: 4rem;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    p {
+      &:nth-child(12) {
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 17px;
+        font-family: Merriweather;
+        text-align: justify;
+        line-height: 22px;
+      }
+    }
+    p {
+      &:nth-child(13) {
+        padding-bottom: 5rem;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+
+        a {
+          color: #e60000;
+        }
+
+        @include breakMin(xl) {
+          // padding-bottom: 4rem;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+    }
+
   }
   @include breakMin(xl) {
     width: 66.7%;
