@@ -1,5 +1,4 @@
 .layout-container .main-header {
-  position: fixed;
   z-index: 1;
   display: flex;
   width: 100%;
@@ -28,6 +27,26 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+@media (min-width: 1200px) {
+  .sticky {
+    top: 5rem;
+  }
+}
+
+.relative {
+  position: relative;
+  top: 2rem;
+}
+@media (min-width: 1200px) {
+  .relative {
+    top: 0;
+  }
 }
 
 .footer-section {
@@ -1012,6 +1031,11 @@
 .slick-prev:focus {
   background: black;
 }
+@media (max-width: 576px) {
+  .slick-prev {
+    left: 15rem;
+  }
+}
 
 .slick-next {
   right: -6rem;
@@ -1032,6 +1056,11 @@
 }
 .slick-next:focus {
   background: black;
+}
+@media (max-width: 576px) {
+  .slick-next {
+    right: -2rem;
+  }
 }
 
 .block-views-blocksidebar-list-block-10 {

@@ -1,6 +1,6 @@
 .layout-container {
   .main-header {
-    position: fixed;
+    // position: fixed;
     z-index: 1;
     display: flex;
     width: 100%;
@@ -35,5 +35,22 @@
         }
       }
     }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  @include breakMin(xl) {
+    top: 5rem;
+  }
+}
+
+.relative {
+  position: relative;
+  top: 2rem;
+
+  @include breakMin(xl) {
+    top: 0;
   }
 }

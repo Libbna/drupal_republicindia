@@ -95,6 +95,9 @@
   &:focus {
     background: black;
   }
+  @include breakMax(sm) {
+    left: 15rem;
+  }
 }
 .slick-next {
   right: -6rem;
@@ -116,6 +119,9 @@
   }
   &:focus {
     background: black;
+  }
+  @include breakMax(sm) {
+    right: -2rem;
   }
 }
 
