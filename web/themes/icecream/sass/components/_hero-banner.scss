@@ -1,6 +1,10 @@
 .news-main {
   position: relative;
-  top: 7rem;
+  top: 1rem;
+
+  @include breakMin(xl) {
+    top: 0;
+  }
   .hero-banner {
     padding: 10px;
     background-color: #f8f8f8;

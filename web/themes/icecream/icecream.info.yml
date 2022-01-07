@@ -3,6 +3,8 @@ type: theme
 description: A great theme for warm and summer days
 core_version_requirement: ^8 || ^9
 base theme: classy
+ckeditor_stylesheets:
+  - css/ckeditor.css
 
 # Region metadata.
 regions:
