@@ -71,26 +71,22 @@
  */
 #}
 
-{%
-  set classes = [
-    'node',
-    'node--type-' ~ node.bundle|clean_class,
-    node.isPromoted() ? 'node--promoted',
-    node.isSticky() ? 'node--sticky',
-    not node.isPublished() ? 'node--unpublished',
-    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    current_user_is_owner ? 'current-user-is-owner',
-  ]
-%}
+{% set classes = [
+  'node',
+  'node--type-' ~ (node.bundle|clean_class),
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ (view_mode|clean_class),
+  current_user_is_owner ? 'current-user-is-owner'
+] %}
 {% set date = node.createdtime|date('jS F, Y, H:i') %}
 
-
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
-
+<article {{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label and not page %}
-    <h2{{ title_attributes }}>
+    <h2 {{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
   {% endif %}
@@ -99,18 +95,23 @@
   {% if display_submitted %}
     <footer class="node__meta">
       {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
+      <div {{ author_attributes.addClass('node__submitted') }}>
         {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
         {{ metadata }}
       </div>
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-  <span class="time-elapsed"> {{'Last Updated: '}} {{date}} {{'IST'}} </span>
-  <h2 class="news_title"> {{ news_title }} </h2>
+  <div {{ content_attributes.addClass('node__content') }}>
+    <span class="time-elapsed">
+      {{ 'Last Updated: ' }} {{ date }} {{ 'IST' }}
+    </span>
+    <h2 class="news_title">
+      {{ drupal_block('page_title_block') }}
+    </h2>
     {{ content }}
   </div>
-  <span class="time-elapsed-2">	{{'First Published: '}} {{date}} {{'IST'}} </span>
-
+  <span class="time-elapsed-2">
+    {{ 'First Published: ' }} {{ date }} {{ 'IST' }}
+  </span>
 </article>
