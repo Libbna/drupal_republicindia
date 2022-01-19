@@ -1,0 +1,5 @@
+name: icecream_module
+type: module
+description: Demo Module
+core_version_requirement: ^8 || ^9
+package: Custom

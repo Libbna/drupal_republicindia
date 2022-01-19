@@ -1,0 +1,69 @@
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  line-height: 30px;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  padding: 0 0 10px 0;
+  margin: 0;
+  line-height: 22px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+}
+
+@media (min-width: 1200px) {
+  p {
+    line-height: 25px;
+    font-size: 16px;
+  }
+}
+
+a.red {
+  color: #d10014;
+}
+
+p.ffRoboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+p.merriweather {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+}
+
+h2.black {
+  color: #000;
+}
+
+strong.Roboto.black {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+div.font16 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+h2.merriweather {
+  color: #000;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0;
+}
+/*# sourceMappingURL=ckeditor.css.map */

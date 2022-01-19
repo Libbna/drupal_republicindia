@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../../web/themes/icecream/sass/layout.scss"
+    ],
+    "names": [],
+    "file": "layout.css"
+}

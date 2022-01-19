@@ -1,9 +1,0 @@
-name: Latitude
-description: A module for geographic coordinate
-type: module
-core_version_requirement: ^8 || ^9
-package: Latitude
-dependencies:
-  - drupal:node
-  - webform:webform
-  - devel:devel_generate

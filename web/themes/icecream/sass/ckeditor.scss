@@ -1,0 +1,41 @@
+@import "./base.scss";
+// @import "./layouts/content.scss";
+@import "./abstracts/mixins";
+@import "./abstracts//variables";
+
+a.red {
+  color: $mainColor;
+}
+
+p.ffRoboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+p.merriweather {
+  font-family: 'Merriweather', serif;
+  font-size: $font16;
+}
+
+h2.black {
+  color: $black;
+}
+
+strong.Roboto.black {
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+  font-size: $font16;
+}
+
+div.font16 {
+  font-size: $font16;
+  padding-bottom: 10px;
+}
+
+h2.merriweather {
+  color: $black;
+  font-family: 'Merriweather', serif;
+  font-size: $font16;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 0;
+}

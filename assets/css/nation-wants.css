@@ -1,0 +1,45 @@
+.block-views-blockcontent-news-block-1 {
+  padding-top: 40px;
+}
+
+.block-views-blockcontent-news-block-1 h2 {
+  padding-bottom: 15px;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.block-views-blockcontent-news-block-1 .views-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.block-views-blockcontent-news-block-1 .views-col {
+  width: 33.33% !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.block-views-blockcontent-news-block-1 .views-col .col-1, .block-views-blockcontent-news-block-1 .views-col .col-2 {
+  padding-right: 20px;
+}
+
+.block-views-blockcontent-news-block-1 .views-field-title a {
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+}
+/*# sourceMappingURL=nation-wants.css.map */

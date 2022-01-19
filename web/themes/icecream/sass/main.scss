@@ -1,4 +1,3 @@
-
 // partials
 @import "./abstracts/variables";
 @import "./abstracts//mixins";
@@ -21,10 +20,9 @@
 @import "./components/must-read";
 @import "./layouts/content";
 @import "./components/we-recomment";
+@import "./layouts/facebook";
+
 // layout - html
-* {
-  box-sizing: border-box;
-}
 
 
 a {
@@ -32,24 +30,7 @@ a {
   color: $black;
 }
 
-body, html {
-  letter-spacing: 0;
-  line-height: 20px;
-  font-size: 100%;
-  font-family: 'Roboto', sans-serif;
 
-
-  a {
-    text-decoration: none;
-  }
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .pr-15 {
   padding-right: 15px;
@@ -95,58 +76,61 @@ img {
   width: 100%;
   background-color: #f8f8f8;
 
-    .highlighted-section {
-      background-color: #f8f8f8;
-      padding-bottom: 40px;
-      padding-left: 10px;
-      padding-right: 10px;
+  .highlighted-section {
+    background-color: #f8f8f8;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 
-      .masthead-wrapper {
-        display: flex;
-        @include section1200();
+    .masthead-wrapper {
+      display: flex;
+      @include section1200();
 
-        aside {
-          box-shadow: 2px 2px 10px rgb(221 221 221 / 50%);
-        }
-        .news-aside {
-          .view-content {
-            .views-row {
-              display: flex;
-              flex-direction: row-reverse;
-              padding: 15px;
-              border-top: 1px solid #ddd;
+      aside {
+        box-shadow: 2px 2px 10px rgb(221 221 221 / 50%);
+      }
 
-              .views-field {
-                padding-left: 10px;
+      .news-aside {
+        .view-content {
+          .views-row {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 15px;
+            border-top: 1px solid #ddd;
 
-                a {
-                  font-weight: 700;
-                  font-size: 16px;
-                  color: #000;
-                  font-family: roboto, sans-serif;
-                }
+            .views-field {
+              padding-left: 10px;
+
+              a {
+                font-weight: 700;
+                font-size: 16px;
+                color: #000;
+                font-family: roboto, sans-serif;
               }
             }
           }
         }
       }
-
-      .highlight_first {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        width: calc(32% + 6px);
-        margin-right: 20px;
-      }
-      .highlight_second {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        width: calc(39% + 2px);
-        margin-right: 20px;
-      }
-      .highlight_third {
-        min-width: 300px;
-      }
     }
+
+    .highlight_first {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      width: calc(32% + 6px);
+      margin-right: 20px;
+    }
+
+    .highlight_second {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      width: calc(39% + 2px);
+      margin-right: 20px;
+    }
+
+    .highlight_third {
+      min-width: 300px;
+    }
+  }
 
 
 
@@ -181,7 +165,7 @@ img {
             margin-top: 15px;
             margin-bottom: 15px;
 
-            .views-field  {
+            .views-field {
               h2 {
                 font-size: 16px;
                 font-weight: 700;
@@ -192,48 +176,52 @@ img {
           }
         }
       }
+
       .block-views-blocksidebar-list-block-6 {
         display: flex;
         padding-top: 20px;
         padding-bottom: 40px;
+
         .view-display-id-block_6 {
           .view-content {
             .views-row {
               display: flex;
-                .views-col {
-                  width: 32.33% !important;
-                  background-color: #fff;
-                  margin-right: 20px;
-                  border: 1px solid #ddd;
-                  box-shadow: 2px 2px 10px rgb(221 221 221 / 50%);
 
-                  .views-field-title {
-                    padding: 15px;
+              .views-col {
+                width: 32.33% !important;
+                background-color: #fff;
+                margin-right: 20px;
+                border: 1px solid #ddd;
+                box-shadow: 2px 2px 10px rgb(221 221 221 / 50%);
 
-                    .field-content {
-                      height: 75px;
+                .views-field-title {
+                  padding: 15px;
 
-                      a {
-                        font-family: roboto, sans-serif;
-                        font-weight: 700;
-                        margin: 0;
-                        font-size: 18px;
-                        line-height: 23px;
-                        color: black;
-                      }
+                  .field-content {
+                    height: 75px;
+
+                    a {
+                      font-family: roboto, sans-serif;
+                      font-weight: 700;
+                      margin: 0;
+                      font-size: 18px;
+                      line-height: 23px;
+                      color: black;
                     }
                   }
-                  .col-3 {
-                    margin-right: -4px;
-                  }
                 }
-             }
-           }
-         }
-       }
-     }
+
+                .col-3 {
+                  margin-right: -4px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
+}
 
 // .republic-dom {
 //   font-size: .8em;
@@ -271,4 +259,3 @@ img {
 //     }
 //   }
 // }
-

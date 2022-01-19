@@ -1,0 +1,35 @@
+.block-system-breadcrumb-block {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumb ol {
+  margin-left: 1.5rem;
+}
+
+.breadcrumb ol li::before {
+  content: "/\00a0";
+  color: black;
+  font-weight: 500;
+}
+
+.breadcrumb ol li:nth-child(2) {
+  color: #e60000;
+  font-weight: 700;
+}
+/*# sourceMappingURL=breadcrumbs.css.map */
