@@ -35,13 +35,13 @@
     }
 
     @media only screen and (max-width: 768px) {
-     left: -7rem;
-     top: 2rem;
+      left: -7rem;
+      top: 2rem;
 
-     p {
-       display: flex;
-       margin-left: -2rem;
-     }
+      p {
+        display: flex;
+        margin-left: -2rem;
+      }
     }
   }
 }
@@ -49,10 +49,12 @@
 .menu--left-sub-menu {
   padding-top: 3.5rem;
   width: 17%;
+
   .menu_items {
     padding: 0;
     list-style: none;
     width: 100%;
+
     span {
       margin: 0;
       font-size: 12px;
@@ -71,10 +73,11 @@
         a {
           color: $mainColor;
           font-size: 14px;
-            &:hover {
-              font-weight: 600;
-              text-decoration: none;
-            }
+
+          &:hover {
+            font-weight: 600;
+            text-decoration: none;
+          }
         }
 
         &::after {
@@ -93,7 +96,8 @@
 }
 
 .sub_Menu {
-  padding-top: 3.5rem;
+  position: relative;
+  top: 4.5rem;
   width: 83%;
   height: 554px;
   overflow: auto;
@@ -126,6 +130,7 @@
           font-size: 18px;
           color: $mainColor;
         }
+
         .menu_items {
           display: block;
           padding-left: 0;
@@ -134,6 +139,7 @@
           a {
             font-size: 14px;
             padding: 3px 0;
+
             &:hover {
               text-decoration: underline;
             }
