@@ -14,6 +14,7 @@ icecream-style:
       css/breadcrumbs.css: { weight: 10 }
       css/ckeditor.css: { weight: 10 }
       css/base.css: { weight: 10 }
+      css/searchResults.css: {weight: 10}
   js:
     js/app.js: { weight: -10 }
     js/custom.js: { weight: -10 }

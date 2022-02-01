@@ -25,11 +25,22 @@ function icecream_theme_suggestions_node_alter (array &$suggestions, array $vari
     $suggestions[] = 'node__' . 'authenticated' ;
   }
 
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__'.$content_type;
+  }
+
 }
 
 function icecream_preprocess_block(&$variables) {
+  // Kint($variables);
   $variables['today'] = date('H:i, m-d-Y');
+
+  if ($variables['plugin_id'] == 'views_block:search_view-search_view_block_1') {
+    $variables['#attached']['library'][] = 'css/searchResults.css';
+  }
 }
+
 
 // search-form block
 function icecream_form_search_block_form_alter(&$form, &$form_state) {
@@ -55,6 +66,4 @@ function icecream_preprocess_search_result(&$variables, &$form_id) {
   // Kint($variables['created']);
 
 }
-
-
 
