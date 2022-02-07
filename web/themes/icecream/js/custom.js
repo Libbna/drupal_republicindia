@@ -7,7 +7,6 @@ var subMenuList = document.getElementById('sub_Menu');
 var followUs = document.getElementById('block-followus-2');
 
 
-
 // When the user clicks the search btn / hamburger icon, open the modal
 searchBtn.onclick = function () {
   subMenu.style.display = "block";
@@ -50,3 +49,4 @@ function stickyHeader() {
     header.classList.add("relative");
   }
 }
+
