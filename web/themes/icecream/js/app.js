@@ -30,6 +30,7 @@
           subMenuList.css("display", "none");
           followUs.css("display", "none");
           $('#clear-search').show();
+          $('.search-header').show();
         })
 
         $(document).on('click', '#clear-search', function () {
