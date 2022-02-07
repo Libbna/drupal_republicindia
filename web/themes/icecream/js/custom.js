@@ -5,7 +5,7 @@ var bars = document.getElementById('bars');
 var leftSubMenu = document.getElementById('block-leftsubmenu');
 var subMenuList = document.getElementById('sub_Menu');
 var followUs = document.getElementById('block-followus-2');
-var clearSrch = document.querySelectorAll('[id^="edit-reset"]');
+
 
 
 // When the user clicks the search btn / hamburger icon, open the modal
@@ -50,4 +50,3 @@ function stickyHeader() {
     header.classList.add("relative");
   }
 }
-

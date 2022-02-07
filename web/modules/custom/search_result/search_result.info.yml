@@ -1,0 +1,7 @@
+name: Views Search Result
+type: module
+description: "Custom area header search result for views."
+core_version_requirement: ^8 || ^9
+package: "Custom"
+dependencies:
+  - drupal:views

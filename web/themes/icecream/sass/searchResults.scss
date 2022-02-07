@@ -16,9 +16,16 @@
     display: flex;
     justify-content: center;
 
+    &::before {
+      content: url('https://www.republicworld.com/assets/images/header/search-icon.png');
+      position: absolute;
+      left: 10rem;
+      transform: scale(0.3);
+    }
+
     .form-item-search-api-fulltext {
       display: flex;
-      padding: 12px 20px 12px 84px;
+      padding: 12px 20px 12px 59px;
       margin: auto 0;
       border: 1px solid #ddd;
       border-radius: 4px;
@@ -83,19 +90,6 @@
 
 
 .search-content {
-  [id^="edit-reset"] {
-    background: none;
-    color: #d10014;
-    padding: 0;
-    font: inherit;
-    border: none;
-    outline: inherit;
-    box-shadow: 0;
-    box-shadow: none;
-    text-decoration: underline;
-    font-size: 14px;
-  }
-
   [id^="edit-submit-search-view"] {
     border: none;
     border-radius: 5px;
@@ -113,4 +107,21 @@
       cursor: not-allowed;
     }
   }
+
+  .view-header {
+    width: fit-content;
+  }
+
+  .view-filters {
+    margin-top: -1rem;
+  }
+}
+
+.clear-search {
+  width: fit-content;
+  margin-bottom: -1.3rem;
+  color: #d10014;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
 }

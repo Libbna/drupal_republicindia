@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_views_data().
+ */
+function search_result_views_data() {
+  $data['views']['search_result'] = [
+    'title' => t('Search Result'),
+    'help' => t('Provides search result summary from search key value'),
+    'area' => [
+      'id' => 'search_result',
+    ],
+  ];
+  return $data;
+}

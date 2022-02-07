@@ -1,37 +1,49 @@
 
-(function (Drupal) {
+(function (Drupal, $) {
 
   Drupal.behaviors.icecreamBehaviors = {
     attach: function (context, settings) {
-      var searchBtn = document.getElementById("edit-submit-search-view");
-      var inputFrm = document.getElementById('edit-search-api-fulltext');
-      var leftSubMenu = document.getElementById('block-leftsubmenu');
-      var subMenuList = document.getElementById('sub_Menu');
-      var followUs = document.getElementById('block-followus-2');
-      searchBtn.disabled = true;
+      $(document, context).once('icecreamBehaviors').each(function () {
+        // e.stopPropagation();
+        var searchBtn = $('#edit-submit-search-view');
+        var inputFrm = $('#edit-search-api-fulltext')
+        var leftSubMenu = $('#block-leftsubmenu');
+        var subMenuList = $('#sub_Menu');
+        var followUs = $('#block-followus-2');
+        var clearSrch = $('#clear-search');
+        var view_content = $('.view-content');
 
 
-      inputFrm.addEventListener('input', function () {
-        if (inputFrm.value.length >= 2) {
-          searchBtn.disabled = false;
-        } else {
-          searchBtn.disabled = true;
-        }
+        searchBtn.prop("disabled", true);
+        $('#clear-search').hide();
+
+        inputFrm.on("change", function () {
+          if ($('#edit-search-api-fulltext').val().length >= 2) {
+            searchBtn.prop("disabled", false);
+          } else {
+            searchBtn.prop("disabled", true);
+          }
+        })
+
+        searchBtn.on('click', function () {
+          leftSubMenu.css("display", "none");
+          subMenuList.css("display", "none");
+          followUs.css("display", "none");
+          $('#clear-search').show();
+        })
+
+        $(document).on('click', '#clear-search', function () {
+          leftSubMenu.css("display", "block");
+          subMenuList.css("display", "block");
+          followUs.css("display", "block");
+          $('.search-content > .view-content').hide();
+          $('#clear-search').hide();
+          $('id^="edit-search-api-fulltext"').val('');
+        })
       })
-
-      searchBtn.addEventListener('click', function () {
-        leftSubMenu.style.display = "none";
-        subMenuList.style.display = "none";
-        followUs.style.display = "none";
-      })
-
-    },
+    }
   }
-})(Drupal);
-
-
-
-
+})(Drupal, jQuery);
 
 
 

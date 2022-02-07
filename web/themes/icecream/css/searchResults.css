@@ -1,0 +1,104 @@
+.block-views-blocksearch-view-search-view-block-1 {
+  padding: 20px 10px 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 11.4rem;
+  border-top: 1px solid #ddd;
+  z-index: 2;
+  overflow: auto;
+}
+.block-views-blocksearch-view-search-view-block-1 .form--inline {
+  display: flex;
+  justify-content: center;
+}
+.block-views-blocksearch-view-search-view-block-1 .form--inline::before {
+  content: url("https://www.republicworld.com/assets/images/header/search-icon.png");
+  position: absolute;
+  left: 10rem;
+  transform: scale(0.3);
+}
+.block-views-blocksearch-view-search-view-block-1 .form--inline .form-item-search-api-fulltext {
+  display: flex;
+  padding: 12px 20px 12px 59px;
+  margin: auto 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 62.5%;
+}
+.block-views-blocksearch-view-search-view-block-1 .form--inline .form-item-search-api-fulltext label {
+  display: none;
+}
+.block-views-blocksearch-view-search-view-block-1 .form--inline input[type=text] {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+.block-views-blocksearch-view-search-view-block-1 .form-item-keys {
+  margin-left: 15rem;
+}
+.block-views-blocksearch-view-search-view-block-1 .search-block-form {
+  display: block;
+}
+.block-views-blocksearch-view-search-view-block-1 #search-block-form {
+  width: 100%;
+}
+.block-views-blocksearch-view-search-view-block-1 .fa-search {
+  font-size: 1.2rem;
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 13px;
+  color: dimgrey;
+}
+.block-views-blocksearch-view-search-view-block-1 .view-content {
+  padding-top: 3.5rem;
+  width: 72.5%;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: auto;
+}
+.block-views-blocksearch-view-search-view-block-1 .view-content::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+  background-color: #f2f2f2a1;
+}
+.block-views-blocksearch-view-search-view-block-1 .view-content::-webkit-scrollbar-thumb {
+  background: #c6c6c6;
+  border-radius: 5px;
+  border: 1px solid #7777771a;
+}
+
+.search-content [id^=edit-submit-search-view] {
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #e52d27 0px, #d10014 49.87%, #b31217 100%);
+  box-shadow: rgba(15, 15, 15, 0.2) 2px 4px 8px;
+  padding: 13px 20px;
+  color: white;
+}
+.search-content [id^=edit-submit-search-view]:disabled {
+  background: rgba(128, 128, 128, 0.5);
+  cursor: not-allowed;
+}
+.search-content .view-header {
+  width: fit-content;
+}
+.search-content .view-filters {
+  margin-top: -1rem;
+}
+
+.clear-search {
+  width: fit-content;
+  margin-bottom: -1.3rem;
+  color: #d10014;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+}
