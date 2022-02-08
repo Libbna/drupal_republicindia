@@ -1,0 +1,29 @@
+uuid: 92e747f8-4a6d-49b1-9e65-9b5e2e319538
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_news
+  module:
+    - system
+    - views
+  theme:
+    - icecream
+id: views_block__top_news_block_1
+theme: icecream
+region: footer_menu_fourth
+weight: -16
+provider: null
+plugin: 'views_block:top_news-block_1'
+settings:
+  id: 'views_block:top_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/node/*'

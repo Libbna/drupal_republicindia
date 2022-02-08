@@ -1,0 +1,23 @@
+uuid: 78ebc6ab-f8e4-47ad-8f05-e7f1b5eff23c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.download_the_app.body
+field_name: body
+entity_type: block_content
+bundle: download_the_app
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

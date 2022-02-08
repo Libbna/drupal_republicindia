@@ -1,0 +1,25 @@
+uuid: 1eb6f517-7e21-42e4-88e8-da284ec77bd9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:1ca4aad9-587f-4202-a67f-c1d2820b383e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: herobanner
+theme: bartik
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:1ca4aad9-587f-4202-a67f-c1d2820b383e'
+settings:
+  id: 'block_content:1ca4aad9-587f-4202-a67f-c1d2820b383e'
+  label: 'Hero Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

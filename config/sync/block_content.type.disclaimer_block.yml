@@ -1,0 +1,8 @@
+uuid: dc2e62ed-b133-47fa-b832-6ab2f38c4225
+langcode: en
+status: true
+dependencies: {  }
+id: disclaimer_block
+label: 'Disclaimer Block'
+revision: 0
+description: 'A disclaimer block contains disclaimer and copyright text.'

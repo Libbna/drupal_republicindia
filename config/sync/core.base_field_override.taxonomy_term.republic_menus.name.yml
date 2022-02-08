@@ -1,0 +1,18 @@
+uuid: 5d7e43d3-a61e-49c0-b11c-402d34078a8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.republic_menus
+id: taxonomy_term.republic_menus.name
+field_name: name
+entity_type: taxonomy_term
+bundle: republic_menus
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,14 @@
+uuid: 2052dd89-2256-4ba4-a509-17adf1c05b89
+langcode: en
+status: true
+dependencies: {  }
+name: image_269_x_147_
+label: 'Image (269 x 147)'
+effects:
+  dbafb6a5-3a17-40a7-af35-68febdff988f:
+    uuid: dbafb6a5-3a17-40a7-af35-68febdff988f
+    id: image_resize
+    weight: 1
+    data:
+      width: 269
+      height: 147

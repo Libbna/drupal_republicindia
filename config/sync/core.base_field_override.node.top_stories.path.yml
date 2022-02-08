@@ -1,0 +1,20 @@
+uuid: 3aebe70f-d9ce-4fab-8f52-9089b38fa493
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.top_stories
+  module:
+    - path
+id: node.top_stories.path
+field_name: path
+entity_type: node
+bundle: top_stories
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

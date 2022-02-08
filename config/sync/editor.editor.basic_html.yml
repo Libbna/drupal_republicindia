@@ -1,0 +1,70 @@
+uuid: dd608d2a-9dea-46cf-b595-a26e73f61960
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - TextColor
+            - BGColor
+            - Italic
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyRight
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Iframe
+            - DrupalImage
+        -
+          name: 'Block Formatting'
+          items:
+            - Format
+            - Styles
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: "a.red|Red Link\r\na.green|Green Link\r\np.ffRobot0|Roboto Paragraph\r\np.merriweather|Merriweather Paragraph\r\nh2.black|H2 Black\r\nh2.red|H2 Red\r\nstrong.Roboto.black|Strong Roboto\r\nh2.merriweather| H2 Merriweather\r\ndiv.font16|Div FSize 16"
+    language:
+      language_list: un
+    font:
+      font_names: ''
+      font_sizes: ''
+    colorbutton:
+      colors: E60000
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

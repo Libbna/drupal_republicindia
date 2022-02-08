@@ -1,0 +1,23 @@
+uuid: ef856327-e34c-4443-9729-30c6016e4b32
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.disclaimer_block
+    - field.field.block_content.disclaimer_block.field_copyright
+  module:
+    - text
+id: block_content.disclaimer_block.default
+targetEntityType: block_content
+bundle: disclaimer_block
+mode: default
+content:
+  field_copyright:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

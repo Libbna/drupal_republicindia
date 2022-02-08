@@ -1,0 +1,24 @@
+uuid: 8906ecc3-58a8-4010-8a11-3fe771cd7968
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - icecream
+id: breadcrumbs
+theme: icecream
+region: banner_top
+weight: -19
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/*\r\n/taxonomy/term/*"

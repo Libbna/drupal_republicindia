@@ -1,0 +1,8 @@
+uuid: 54dbd14f-1de1-4158-a1fb-800a519078fb
+langcode: en
+status: true
+dependencies: {  }
+id: follow_us
+label: 'Follow Us'
+revision: 0
+description: ''

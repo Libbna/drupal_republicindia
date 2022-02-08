@@ -1,0 +1,18 @@
+uuid: 715ede65-736a-44ef-b79a-f7215fee7c5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news_article_2
+id: node.news_article_2.title
+field_name: title
+entity_type: node
+bundle: news_article_2
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

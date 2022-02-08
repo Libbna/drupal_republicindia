@@ -1,0 +1,18 @@
+uuid: bb568d8c-5036-48d0-a35c-076794b12f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.static_stats_
+id: node.static_stats_.title
+field_name: title
+entity_type: node
+bundle: static_stats_
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

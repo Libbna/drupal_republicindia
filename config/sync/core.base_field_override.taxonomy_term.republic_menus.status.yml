@@ -1,0 +1,22 @@
+uuid: 05c38f1c-e883-4f9b-82ef-1aacaa9285a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.republic_menus
+id: taxonomy_term.republic_menus.status
+field_name: status
+entity_type: taxonomy_term
+bundle: republic_menus
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

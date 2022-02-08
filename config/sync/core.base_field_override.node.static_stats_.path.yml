@@ -1,0 +1,20 @@
+uuid: a3e5cc16-11be-4078-94ae-978fcf8b3cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.static_stats_
+  module:
+    - path
+id: node.static_stats_.path
+field_name: path
+entity_type: node
+bundle: static_stats_
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

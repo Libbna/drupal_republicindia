@@ -1,0 +1,14 @@
+uuid: 3e2d9445-5759-4160-a886-b241fead7f1b
+langcode: en
+status: true
+dependencies: {  }
+name: thumbail_283_x_156_
+label: 'Thumbail (283 x 156)'
+effects:
+  84937618-078e-481e-91eb-b2844c9b86ca:
+    uuid: 84937618-078e-481e-91eb-b2844c9b86ca
+    id: image_resize
+    weight: 1
+    data:
+      width: 283
+      height: 156

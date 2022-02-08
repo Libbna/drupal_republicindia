@@ -1,0 +1,14 @@
+uuid: a5d3d111-c180-4aa6-844e-65c0bbd9731b
+langcode: en
+status: true
+dependencies: {  }
+name: image_278_x_149_
+label: 'Image (278 x 149)'
+effects:
+  1aa3f458-a8d5-47d7-b593-86a2f8952aca:
+    uuid: 1aa3f458-a8d5-47d7-b593-86a2f8952aca
+    id: image_resize
+    weight: 1
+    data:
+      width: 278
+      height: 149

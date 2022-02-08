@@ -1,0 +1,18 @@
+uuid: 29fdd961-edf9-4a9a-bd2c-fa6c3f3fc006
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+id: block_content.download_the_app.changed
+field_name: changed
+entity_type: block_content
+bundle: download_the_app
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

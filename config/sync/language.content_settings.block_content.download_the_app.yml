@@ -1,0 +1,18 @@
+uuid: a3a4d824-28ea-48d8-bf25-c37f6becf69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.download_the_app
+target_entity_type_id: block_content
+target_bundle: download_the_app
+default_langcode: site_default
+language_alterable: false

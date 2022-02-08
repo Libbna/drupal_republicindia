@@ -1,0 +1,94 @@
+uuid: 914d39b0-ae13-4db0-82f9-59af2e2442be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.news_article.title
+    - field.field.node.news_article.body
+    - field.field.node.news_article.field_author
+    - field.field.node.news_article.field_news_category
+    - field.field.node.news_article.field_news_image
+    - field.field.node.news_article.field_summary
+    - node.type.news_article
+  module:
+    - node
+label: 'NEWS Feeds'
+id: news_feeds
+description: 'feeds related to news'
+help: ''
+import_period: 3600
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: true
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: syndication
+parser_configuration: {  }
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: news_article
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources: {  }
+mappings:
+  -
+    target: title
+    map:
+      value: feed_title
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: field_summary
+    map:
+      value: 'parent:title'
+      summary: 'parent:title'
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: body
+    map:
+      value: feed_description
+      summary: feed_description
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_news_image
+    map:
+      target_id: 'parent:fid'
+      alt: feed_title
+      title: feed_image_uri
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+  -
+    target: field_news_category
+    map:
+      target_id: tags
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+  -
+    target: field_author
+    map:
+      target_id: author_name
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false

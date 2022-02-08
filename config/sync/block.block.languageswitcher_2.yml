@@ -1,0 +1,27 @@
+uuid: 25209608-67ae-4ab4-93a6-9a9c390d9259
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - icecream
+id: languageswitcher_2
+theme: icecream
+region: header
+weight: -10
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

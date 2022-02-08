@@ -1,0 +1,30 @@
+uuid: 09cdcbd6-a44f-414b-aa87-ddb81cfa91b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:download_the_app:cf60625d-4ff6-4034-b18d-52792c7b2a4f'
+  module:
+    - block_content
+    - system
+  theme:
+    - icecream
+id: linkstodownloadtheapp
+theme: icecream
+region: footer_menu_fifth
+weight: 0
+provider: null
+plugin: 'block_content:cf60625d-4ff6-4034-b18d-52792c7b2a4f'
+settings:
+  id: 'block_content:cf60625d-4ff6-4034-b18d-52792c7b2a4f'
+  label: 'download the app'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/node/*'

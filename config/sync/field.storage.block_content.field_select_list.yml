@@ -1,0 +1,27 @@
+uuid: f80e52eb-73ae-4a84-b9eb-632cfcd28ee7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_select_list
+field_name: field_select_list
+entity_type: block_content
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: Fade
+    -
+      value: 1
+      label: Slide
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

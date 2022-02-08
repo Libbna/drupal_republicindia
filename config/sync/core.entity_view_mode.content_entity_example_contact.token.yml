@@ -1,0 +1,10 @@
+uuid: 28390a58-ec3a-40a7-9794-d395b0c6cb93
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_entity_example
+id: content_entity_example_contact.token
+label: Token
+targetEntityType: content_entity_example_contact
+cache: true

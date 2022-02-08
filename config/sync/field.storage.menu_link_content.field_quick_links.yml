@@ -1,0 +1,20 @@
+uuid: d7951133-c22e-4755-a4c5-d74b78d43a35
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+    - text
+id: menu_link_content.field_quick_links
+field_name: field_quick_links
+entity_type: menu_link_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

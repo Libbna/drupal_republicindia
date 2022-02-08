@@ -1,0 +1,25 @@
+uuid: 85c3dc66-c429-4eb1-9fe6-d92e7bb1028b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:download_the_app:607532b7-df84-4db5-8757-40cd4955c969'
+  module:
+    - block_content
+  theme:
+    - icecream
+id: livetvlink
+theme: icecream
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:607532b7-df84-4db5-8757-40cd4955c969'
+settings:
+  id: 'block_content:607532b7-df84-4db5-8757-40cd4955c969'
+  label: 'Live TV Link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

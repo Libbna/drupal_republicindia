@@ -1,0 +1,8 @@
+uuid: 125debb0-1a81-4b79-ad98-92eba692af49
+langcode: en
+status: true
+dependencies: {  }
+id: republic
+label: Republic
+description: ''
+locked: false

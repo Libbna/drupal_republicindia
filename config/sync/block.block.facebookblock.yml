@@ -1,0 +1,25 @@
+uuid: d7ea20cb-2761-4328-8b84-f241f1227706
+langcode: en
+status: true
+dependencies:
+  module:
+    - icecream_module
+    - system
+  theme:
+    - icecream
+id: facebookblock
+theme: icecream
+region: content
+weight: -7
+provider: null
+plugin: facebook_block
+settings:
+  id: facebook_block
+  label: 'Facebook Block'
+  label_display: '0'
+  provider: icecream_module
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/node/*'

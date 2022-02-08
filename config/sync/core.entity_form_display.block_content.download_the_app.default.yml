@@ -1,0 +1,60 @@
+uuid: 07f9e211-4301-42ab-bf78-4da99e37ebdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+    - field.field.block_content.download_the_app.body
+    - field.field.block_content.download_the_app.field_app_image
+    - field.field.block_content.download_the_app.field_apple_app
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.download_the_app.default
+targetEntityType: block_content
+bundle: download_the_app
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_app_image:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_apple_app:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

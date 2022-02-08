@@ -1,0 +1,21 @@
+uuid: 46f3234b-3a8e-44f9-9fe5-781cac9806d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_quick_links
+    - system.menu.sub-menus
+  module:
+    - text
+id: menu_link_content.sub-menus.field_quick_links
+field_name: field_quick_links
+entity_type: menu_link_content
+bundle: sub-menus
+label: 'Quick Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

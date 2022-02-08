@@ -1,0 +1,29 @@
+uuid: f931a180-14d2-4815-8fa5-e33245770db1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sub-menus
+  module:
+    - system
+  theme:
+    - icecream
+id: submenus
+theme: icecream
+region: secondary_menu
+weight: -17
+provider: null
+plugin: 'system_menu_block:sub-menus'
+settings:
+  id: 'system_menu_block:sub-menus'
+  label: Sub-Menus
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

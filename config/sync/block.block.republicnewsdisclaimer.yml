@@ -1,0 +1,25 @@
+uuid: e034aad3-48b9-4193-8bdf-7a96ce478e86
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:disclaimer_block:f2c48b7c-9d09-4d24-95cb-8f58cbadd30d'
+  module:
+    - block_content
+  theme:
+    - icecream
+id: republicnewsdisclaimer
+theme: icecream
+region: footer
+weight: -14
+provider: null
+plugin: 'block_content:f2c48b7c-9d09-4d24-95cb-8f58cbadd30d'
+settings:
+  id: 'block_content:f2c48b7c-9d09-4d24-95cb-8f58cbadd30d'
+  label: 'Republic News Disclaimer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

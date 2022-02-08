@@ -1,0 +1,29 @@
+uuid: 13195b86-afbf-4048-87bf-226d52cd9635
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.static_stats_.field_covid_19_img
+    - field.field.node.static_stats_.field_statsl
+    - field.field.node.static_stats_.field_statsr
+    - field.field.node.static_stats_.field_totalnumbers
+    - node.type.static_stats_
+  module:
+    - user
+id: node.static_stats_.teaser
+targetEntityType: node
+bundle: static_stats_
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_covid_19_img: true
+  field_statsl: true
+  field_statsr: true
+  field_totalnumbers: true
+  langcode: true

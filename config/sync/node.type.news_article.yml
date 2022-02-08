@@ -1,0 +1,17 @@
+uuid: beb2fb13-dd6b-4805-ba7e-ebd73e3922d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'News Article'
+type: news_article
+description: 'Use this to add news texts and images. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

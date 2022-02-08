@@ -1,0 +1,29 @@
+uuid: ba044fbd-ac32-4715-9be0-154714e27550
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.republic
+  module:
+    - system
+  theme:
+    - icecream
+id: republic
+theme: icecream
+region: footer_menu_third
+weight: -15
+provider: null
+plugin: 'system_menu_block:republic'
+settings:
+  id: 'system_menu_block:republic'
+  label: Republic
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/node/*'

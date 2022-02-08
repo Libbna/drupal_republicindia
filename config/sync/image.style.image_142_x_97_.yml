@@ -1,0 +1,14 @@
+uuid: 03de39dc-314e-4a01-bbae-a08160e7538b
+langcode: en
+status: true
+dependencies: {  }
+name: image_142_x_97_
+label: 'Image (142 x 97)'
+effects:
+  8b57f660-e436-4ecc-a143-0048d7af5254:
+    uuid: 8b57f660-e436-4ecc-a143-0048d7af5254
+    id: image_resize
+    weight: 1
+    data:
+      width: 142
+      height: 97

@@ -1,0 +1,15 @@
+uuid: 89bfa603-409c-456e-8ae3-6c486d4b3da9
+langcode: en
+status: true
+dependencies: {  }
+name: respimage_367_x_200_
+label: 'RespImage (367 x 200)'
+effects:
+  1b630d4f-03b2-427d-948c-edf4a8f6182b:
+    uuid: 1b630d4f-03b2-427d-948c-edf4a8f6182b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 367
+      height: 200
+      anchor: center-center

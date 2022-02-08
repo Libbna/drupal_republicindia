@@ -1,0 +1,17 @@
+uuid: d44cbaad-7407-442b-8868-e7a719479ce3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Static Stats'
+type: static_stats_
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

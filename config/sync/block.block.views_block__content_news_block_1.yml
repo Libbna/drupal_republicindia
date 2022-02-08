@@ -1,0 +1,29 @@
+uuid: 7ad0845b-210b-4d00-8e23-0767ea0e096b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_news
+  module:
+    - system
+    - views
+  theme:
+    - icecream
+id: views_block__content_news_block_1
+theme: icecream
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:content_news-block_1'
+settings:
+  id: 'views_block:content_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

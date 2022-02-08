@@ -1,0 +1,22 @@
+uuid: f9b8d4d4-37d5-4ff5-a984-a3045f4db3ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.follow_us
+id: block_content.follow_us.status
+field_name: status
+entity_type: block_content
+bundle: follow_us
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,28 @@
+uuid: 362d4219-fdd7-4ba9-b261-34ad3a714ab0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.sub-menus.field_quick_links
+    - system.menu.sub-menus
+  module:
+    - text
+id: menu_link_content.sub-menus.default
+targetEntityType: menu_link_content
+bundle: sub-menus
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quick_links:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

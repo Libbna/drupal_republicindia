@@ -1,0 +1,14 @@
+uuid: 311a5475-b490-429c-a928-933999ef64ac
+langcode: en
+status: true
+dependencies: {  }
+name: long_image_169_300_
+label: 'Long Image (169 × 300)'
+effects:
+  d87acf4f-d272-429c-a6a5-125c46af7be0:
+    uuid: d87acf4f-d272-429c-a6a5-125c46af7be0
+    id: image_resize
+    weight: 1
+    data:
+      width: 169
+      height: 300

@@ -1,0 +1,14 @@
+uuid: 92810be1-fc9e-47c9-bb7c-40175b28919d
+langcode: en
+status: true
+dependencies: {  }
+name: thumbail_385_x_224_
+label: 'Thumbail (385 x 224)'
+effects:
+  ed27e7c4-eccb-4bd7-a576-054355dbc727:
+    uuid: ed27e7c4-eccb-4bd7-a576-054355dbc727
+    id: image_resize
+    weight: 1
+    data:
+      width: 385
+      height: 224

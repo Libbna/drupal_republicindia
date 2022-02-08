@@ -1,0 +1,39 @@
+uuid: 90490fe9-ed56-4bca-ad1c-c2e06cac0a9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebar_list
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - icecream
+id: views_block__sidebar_list_block_1_3
+theme: icecream
+region: highlight_first
+weight: 0
+provider: null
+plugin: 'views_block:sidebar_list-block_1'
+settings:
+  id: 'views_block:sidebar_list-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

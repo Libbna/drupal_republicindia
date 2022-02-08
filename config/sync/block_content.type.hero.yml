@@ -1,0 +1,8 @@
+uuid: 733abc32-763d-4864-95de-c8c3aeb8ca52
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+revision: 0
+description: 'Large Banner with background image. '

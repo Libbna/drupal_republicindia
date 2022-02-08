@@ -1,0 +1,11 @@
+uuid: f0f15740-4f9b-4cf7-9c63-1523ecef2f5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.quick_links
+id: taxonomy_term.quick_links
+target_entity_type_id: taxonomy_term
+target_bundle: quick_links
+default_langcode: site_default
+language_alterable: false

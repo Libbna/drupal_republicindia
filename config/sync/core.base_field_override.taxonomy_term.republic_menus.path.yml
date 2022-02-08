@@ -1,0 +1,20 @@
+uuid: 16b3a6f8-1934-4b65-8e72-8a06e8362375
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.republic_menus
+  module:
+    - path
+id: taxonomy_term.republic_menus.path
+field_name: path
+entity_type: taxonomy_term
+bundle: republic_menus
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

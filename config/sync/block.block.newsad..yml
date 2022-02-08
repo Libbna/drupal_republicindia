@@ -1,0 +1,30 @@
+uuid: acdbec46-54f7-428f-bc76-9d3505b710c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5cd5669f-36ee-4928-a4e7-4884aa064b8a'
+  module:
+    - block_content
+    - system
+  theme:
+    - icecream
+id: newsad.
+theme: icecream
+region: footer_menu_first
+weight: -16
+provider: null
+plugin: 'block_content:5cd5669f-36ee-4928-a4e7-4884aa064b8a'
+settings:
+  id: 'block_content:5cd5669f-36ee-4928-a4e7-4884aa064b8a'
+  label: 'News Ad.'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search/node/\r\n/node/*"

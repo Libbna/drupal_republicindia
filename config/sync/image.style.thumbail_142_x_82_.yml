@@ -1,0 +1,14 @@
+uuid: 2aeb06e5-d55f-4b4c-abd8-444d4475db22
+langcode: en
+status: true
+dependencies: {  }
+name: thumbail_142_x_82_
+label: 'Thumbail. (142 x 82)'
+effects:
+  7ef8ebf3-b747-4548-ae94-ac19ae76b71f:
+    uuid: 7ef8ebf3-b747-4548-ae94-ac19ae76b71f
+    id: image_resize
+    weight: 1
+    data:
+      width: 142
+      height: 82

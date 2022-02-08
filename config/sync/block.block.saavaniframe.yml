@@ -1,0 +1,30 @@
+uuid: c2956e80-cd41-495f-8d5d-c8d78921f7e4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b09d483a-95e3-443a-90aa-b8d83161554c'
+  module:
+    - block_content
+    - system
+  theme:
+    - icecream
+id: saavaniframe
+theme: icecream
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:b09d483a-95e3-443a-90aa-b8d83161554c'
+settings:
+  id: 'block_content:b09d483a-95e3-443a-90aa-b8d83161554c'
+  label: 'Saavan Iframe'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/3

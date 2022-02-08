@@ -1,0 +1,10 @@
+uuid: b609247b-f230-4d02-81cd-f738a3aa3aa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.side_link
+label: 'Side Link'
+targetEntityType: menu_link_content
+cache: true

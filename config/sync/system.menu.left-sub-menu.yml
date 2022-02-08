@@ -1,0 +1,8 @@
+uuid: d8b02284-b8e3-4194-99f7-83a1ba01ca26
+langcode: en
+status: true
+dependencies: {  }
+id: left-sub-menu
+label: 'Left Sub-Menu'
+description: ''
+locked: false

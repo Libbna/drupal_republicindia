@@ -1,0 +1,8 @@
+uuid: 7c6af3d6-62be-48a8-ba34-6a38698deea8
+langcode: en
+status: true
+dependencies: {  }
+name: Author
+vid: author
+description: 'Author of news articles'
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 66a9fd36-e8a0-4af6-be1d-dcbbba7e481d
+langcode: en
+status: true
+dependencies: {  }
+name: image_95_x_88_
+label: 'Image (95 x 88)'
+effects:
+  c806726b-34e8-4161-a41e-a41c0992ef1d:
+    uuid: c806726b-34e8-4161-a41e-a41c0992ef1d
+    id: image_resize
+    weight: 1
+    data:
+      width: 95
+      height: 88

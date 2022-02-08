@@ -1,0 +1,8 @@
+uuid: 095682b4-8b26-460a-9ee8-0371298d6119
+langcode: en
+status: true
+dependencies: {  }
+id: new_date
+label: 'New Date'
+locked: false
+pattern: 'Y-m-d H:i:s'

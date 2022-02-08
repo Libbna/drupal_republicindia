@@ -1,0 +1,22 @@
+uuid: dd0112d5-4ffd-45cf-834d-7a2c0b9d8031
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+id: block_content.download_the_app.status
+field_name: status
+entity_type: block_content
+bundle: download_the_app
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

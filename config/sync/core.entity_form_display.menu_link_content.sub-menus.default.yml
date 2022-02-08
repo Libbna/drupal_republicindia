@@ -1,0 +1,47 @@
+uuid: 232bab9c-8b2f-42b3-ad56-05b895c07b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.sub-menus.field_quick_links
+  module:
+    - link
+    - menu_link_content
+    - text
+id: menu_link_content.sub-menus.default
+targetEntityType: menu_link_content
+bundle: sub-menus
+mode: default
+content:
+  field_quick_links:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

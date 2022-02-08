@@ -1,0 +1,18 @@
+uuid: df879251-a239-4fe2-918f-21088ffe7e89
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.top_stories
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.top_stories
+target_entity_type_id: node
+target_bundle: top_stories
+default_langcode: site_default
+language_alterable: false

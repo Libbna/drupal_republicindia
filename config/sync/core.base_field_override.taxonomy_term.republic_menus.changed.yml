@@ -1,0 +1,18 @@
+uuid: c1e503d9-cd78-48e9-8716-386b4fc70226
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.republic_menus
+id: taxonomy_term.republic_menus.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: republic_menus
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

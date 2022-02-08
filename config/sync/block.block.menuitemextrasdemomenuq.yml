@@ -1,0 +1,25 @@
+uuid: 171b1302-38d3-415e-a364-6bac54773b87
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.mie-demo-base-menu
+  module:
+    - system
+  theme:
+    - icecream
+id: menuitemextrasdemomenuq
+theme: icecream
+region: primary_menu
+weight: 0
+provider: system
+plugin: 'system_menu_block:mie-demo-base-menu'
+settings:
+  id: 'system_menu_block:mie-demo-base-menu'
+  label: 'Menu Item Extras Demo Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

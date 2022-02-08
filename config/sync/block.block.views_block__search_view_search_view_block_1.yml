@@ -1,0 +1,24 @@
+uuid: 70003f81-b0f0-4a08-9afa-92647d4e6183
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_view
+  module:
+    - views
+  theme:
+    - icecream
+id: views_block__search_view_search_view_block_1
+theme: icecream
+region: secondary_menu
+weight: -19
+provider: null
+plugin: 'views_block:search_view-search_view_block_1'
+settings:
+  id: 'views_block:search_view-search_view_block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

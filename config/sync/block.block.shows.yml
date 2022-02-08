@@ -1,0 +1,29 @@
+uuid: be82a2cf-bcdb-42ca-9480-fb20a8381215
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.shows
+  module:
+    - system
+  theme:
+    - icecream
+id: shows
+theme: icecream
+region: footer_menu_second
+weight: -14
+provider: null
+plugin: 'system_menu_block:shows'
+settings:
+  id: 'system_menu_block:shows'
+  label: Shows
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/node/*'

@@ -1,0 +1,30 @@
+uuid: 42e10d8f-9318-4903-b345-c97e1c1ab0b8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:follow_us:5332e1ba-c5da-46af-9276-76ba43decb5b'
+  module:
+    - block_content
+    - system
+  theme:
+    - icecream
+id: followus_2
+theme: icecream
+region: secondary_menu
+weight: -18
+provider: null
+plugin: 'block_content:5332e1ba-c5da-46af-9276-76ba43decb5b'
+settings:
+  id: 'block_content:5332e1ba-c5da-46af-9276-76ba43decb5b'
+  label: 'Follow Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

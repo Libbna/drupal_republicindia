@@ -1,0 +1,8 @@
+uuid: 176b5de4-8e11-4264-a6e0-636a74ae8210
+langcode: en
+status: true
+dependencies: {  }
+name: 'Republic Menus'
+vid: republic_menus
+description: ''
+weight: 0

@@ -1,0 +1,29 @@
+uuid: b2c00dae-5347-4dd4-9637-0ec86c96b2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.menu_link_content.side_link
+    - field.field.menu_link_content.sub-menus.field_quick_links
+    - system.menu.sub-menus
+  module:
+    - text
+id: menu_link_content.sub-menus.side_link
+targetEntityType: menu_link_content
+bundle: sub-menus
+mode: side_link
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_quick_links:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

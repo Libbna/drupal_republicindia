@@ -1,0 +1,18 @@
+uuid: d7c39bbb-b02f-46fd-b3b7-ee05b71c614f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+id: block_content.download_the_app.info
+field_name: info
+entity_type: block_content
+bundle: download_the_app
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

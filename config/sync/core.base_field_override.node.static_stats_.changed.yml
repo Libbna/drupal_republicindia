@@ -1,0 +1,18 @@
+uuid: 9250a557-2e25-44bc-9d5a-52f2098e3532
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.static_stats_
+id: node.static_stats_.changed
+field_name: changed
+entity_type: node
+bundle: static_stats_
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

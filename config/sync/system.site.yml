@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: 4b44ef76-6ae1-4ba8-b949-52d3c9cfcf2b
+name: 'Read Latest News, News Today, Breaking News, India News and Current News on Politics, Bollywood and Sports.'
+mail: libbna260296@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

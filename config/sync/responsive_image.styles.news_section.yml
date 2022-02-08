@@ -1,0 +1,16 @@
+uuid: 5dbc1e8d-e50a-41c3-8fc3-4b8de9199958
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.respimage_367_x_200_
+id: news_section
+label: 'News Section'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: respimage_367_x_200_
+breakpoint_group: responsive_image
+fallback_image_style: respimage_367_x_200_

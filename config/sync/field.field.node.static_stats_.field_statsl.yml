@@ -1,0 +1,23 @@
+uuid: 53b2d316-314c-4c03-82aa-670fb1c3689c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_statsl
+    - node.type.static_stats_
+id: node.static_stats_.field_statsl
+field_name: field_statsl
+entity_type: node
+bundle: static_stats_
+label: statsL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

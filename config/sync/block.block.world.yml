@@ -1,0 +1,29 @@
+uuid: a15740b3-2a33-4096-9133-d816369a7800
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.world
+  module:
+    - system
+  theme:
+    - icecream
+id: world
+theme: icecream
+region: footer_menu_second
+weight: -15
+provider: null
+plugin: 'system_menu_block:world'
+settings:
+  id: 'system_menu_block:world'
+  label: World
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/node/*'

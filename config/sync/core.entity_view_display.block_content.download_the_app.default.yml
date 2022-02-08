@@ -1,0 +1,44 @@
+uuid: 75d64fab-37e3-4e5e-8e0f-282d50326494
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.download_the_app
+    - field.field.block_content.download_the_app.body
+    - field.field.block_content.download_the_app.field_app_image
+    - field.field.block_content.download_the_app.field_apple_app
+  module:
+    - image
+    - text
+id: block_content.download_the_app.default
+targetEntityType: block_content
+bundle: download_the_app
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_app_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_apple_app:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,38 @@
+uuid: 780beb20-6402-4ca8-8d84-61784efbff38
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.disclaimer_block
+    - field.field.block_content.disclaimer_block.field_copyright
+  module:
+    - text
+id: block_content.disclaimer_block.default
+targetEntityType: block_content
+bundle: disclaimer_block
+mode: default
+content:
+  field_copyright:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

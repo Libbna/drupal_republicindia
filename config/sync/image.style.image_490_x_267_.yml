@@ -1,0 +1,14 @@
+uuid: 8913f42a-aae1-4b15-bd9d-dd3404f48e20
+langcode: en
+status: true
+dependencies: {  }
+name: image_490_x_267_
+label: 'Image (490 x 267)'
+effects:
+  1f38650b-428e-48c9-a216-a625263491ea:
+    uuid: 1f38650b-428e-48c9-a216-a625263491ea
+    id: image_resize
+    weight: 1
+    data:
+      width: 490
+      height: 267

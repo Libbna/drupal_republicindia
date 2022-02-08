@@ -1,0 +1,29 @@
+uuid: d28e9b2d-07c6-4530-8197-ebf65eb5a890
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebar_list
+  module:
+    - system
+    - views
+  theme:
+    - icecream
+id: views_block__sidebar_list_block_5
+theme: icecream
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:sidebar_list-block_5'
+settings:
+  id: 'views_block:sidebar_list-block_5'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

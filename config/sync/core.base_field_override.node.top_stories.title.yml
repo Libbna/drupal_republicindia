@@ -1,0 +1,18 @@
+uuid: 8d8941e7-1247-4eba-8c05-f6be03e1bb75
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.top_stories
+id: node.top_stories.title
+field_name: title
+entity_type: node
+bundle: top_stories
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

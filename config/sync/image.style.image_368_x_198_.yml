@@ -1,0 +1,14 @@
+uuid: be77e134-969b-4986-a8ef-700d05f0ea72
+langcode: en
+status: true
+dependencies: {  }
+name: image_368_x_198_
+label: 'Image (368 x 198)'
+effects:
+  411bf846-0e63-4196-b3e7-1ffefb6000bd:
+    uuid: 411bf846-0e63-4196-b3e7-1ffefb6000bd
+    id: image_resize
+    weight: 1
+    data:
+      width: 368
+      height: 198

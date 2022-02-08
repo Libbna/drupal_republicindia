@@ -1,0 +1,21 @@
+uuid: 7850261e-2bd0-4cca-b2e1-8ea56deff89a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotator
+    - field.storage.block_content.field_select_list
+  module:
+    - options
+id: block_content.rotator.field_select_list
+field_name: field_select_list
+entity_type: block_content
+bundle: rotator
+label: 'Select List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

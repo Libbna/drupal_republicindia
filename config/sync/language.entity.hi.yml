@@ -1,0 +1,9 @@
+uuid: 84f2ca32-69af-4108-aee0-9670dfaf56e0
+langcode: hi
+status: true
+dependencies: {  }
+id: hi
+label: 'View in Hindi:'
+direction: ltr
+weight: 1
+locked: false

@@ -1,0 +1,14 @@
+uuid: 7ca8037c-5deb-4ddf-8194-fd5e7303568f
+langcode: en
+status: true
+dependencies: {  }
+name: small_image_138_x_80_
+label: 'small image (138 x 80)'
+effects:
+  81dcef3a-1d73-4da8-918a-d13432ae52af:
+    uuid: 81dcef3a-1d73-4da8-918a-d13432ae52af
+    id: image_resize
+    weight: 1
+    data:
+      width: 138
+      height: 80

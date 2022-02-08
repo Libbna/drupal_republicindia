@@ -1,0 +1,23 @@
+uuid: 6f2f562a-4be2-467e-8532-d188d2fa7741
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.follow_us
+    - field.field.block_content.follow_us.body
+  module:
+    - text
+id: block_content.follow_us.default
+targetEntityType: block_content
+bundle: follow_us
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

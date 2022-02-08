@@ -1,0 +1,10 @@
+uuid: f7bff0f6-73a6-4b48-9d05-401cbc405525
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: 'News Category'
+vid: tags
+description: 'Use this to group news on similar topics into categories.'
+weight: 0

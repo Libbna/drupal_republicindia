@@ -1,0 +1,29 @@
+uuid: d4654e5e-0ef8-440e-9575-e49061a76386
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.top_stories.body
+    - node.type.top_stories
+  module:
+    - text
+    - user
+id: node.top_stories.default
+targetEntityType: node
+bundle: top_stories
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

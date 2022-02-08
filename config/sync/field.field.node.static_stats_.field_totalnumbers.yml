@@ -1,0 +1,21 @@
+uuid: 6cde9a1b-fbb5-46bd-8d31-b257c06c8994
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_totalnumbers
+    - node.type.static_stats_
+  module:
+    - text
+id: node.static_stats_.field_totalnumbers
+field_name: field_totalnumbers
+entity_type: node
+bundle: static_stats_
+label: totalNumbers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
