@@ -1,0 +1,27 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.news-main {
+  position: relative;
+  top: 1rem;
+
+  @include breakMin(xl) {
+    top: 0;
+  }
+
+  .hero-banner {
+    padding: 10px;
+    background-color: #f8f8f8;
+    width: 100%;
+
+    .region-banner-top {
+      @include section1200();
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

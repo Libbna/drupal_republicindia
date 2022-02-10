@@ -14,7 +14,10 @@ icecream-style:
       css/breadcrumbs.css: { weight: 10 }
       css/ckeditor.css: { weight: 10 }
       css/base.css: { weight: 10 }
-      css/searchResults.css: {weight: 10}
+    layout:
+      css/layouts/search-result-content.css: {}
+    component:
+      css/components/hero-banner.css: {}
   js:
     js/app.js: { weight: -10 }
     js/custom.js: { weight: -10 }
@@ -29,3 +32,11 @@ fonts:
     theme:
      "//fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@400;500;700&display=swap"
       : { type: external }
+search_Form:
+  version: VERSION
+  css:
+    component:
+     css/searchResults.css: {}
+  dependencies:
+   - icecream/icecream-style
+
