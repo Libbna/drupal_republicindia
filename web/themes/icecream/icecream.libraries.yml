@@ -16,6 +16,7 @@ icecream-style:
       css/base.css: { weight: 10 }
     layout:
       css/layouts/search-result-content.css: {}
+      css/layouts/highlighted-section.css: {}
     component:
       css/components/hero-banner.css: {}
   js:
