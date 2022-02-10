@@ -1,0 +1,14 @@
+uuid: 5747f7b4-832c-4830-8122-37258561bc6c
+langcode: en
+status: true
+dependencies: {  }
+name: image_195x111_
+label: image(195x111)
+effects:
+  c98ec4ed-31a7-45e9-9831-baabefe4477a:
+    uuid: c98ec4ed-31a7-45e9-9831-baabefe4477a
+    id: image_resize
+    weight: 1
+    data:
+      width: 195
+      height: 111
