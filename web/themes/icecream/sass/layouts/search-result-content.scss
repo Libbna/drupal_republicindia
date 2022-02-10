@@ -1,0 +1,38 @@
+.search-content {
+  .view-content {
+    .views-row {
+      display: flex;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 10px 15px 0;
+
+      .views-field-field-news-image {
+        // width: 25%;
+        padding-right: 15px;
+
+        img {
+          border-radius: 4px;
+        }
+      }
+
+      .views-field-title {
+        width: 75%;
+
+        .field-content {
+          margin: 0;
+          font-size: 16px;
+        }
+      }
+
+      .views-field-field-summary {
+        width: 75%;
+        margin-left: -41.4rem;
+        padding-left: 32px;
+        margin-top: 2.7rem;
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
