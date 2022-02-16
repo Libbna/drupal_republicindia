@@ -2,49 +2,41 @@
 (function (Drupal, $) {
 
   Drupal.behaviors.icecreamBehaviors = {
-    attach: function (context, settings) {
-      $(document, context).once('icecreamBehaviors').each(function () {
-        // e.stopPropagation();
-        var searchBtn = $('#edit-submit-search-view');
-        var inputFrm = $('#edit-search-api-fulltext')
-        var leftSubMenu = $('#block-leftsubmenu');
-        var subMenuList = $('#sub_Menu');
-        var followUs = $('#block-followus-2');
-        var clearSrch = $('#clear-search');
-        var view_content = $('.view-content');
+    attach: function attach(context) {
+      var searchFrmBtn = $('.js-form-submit', context);
+      var inputFrm = $('#edit-search-api-fulltext');
+      var leftSubMenu = $('.menu--left-sub-menu');
+      var subMenuList = $('.sub_Menu');
 
+      searchFrmBtn.click(function () {
+        leftSubMenu.css("display", "none");
+        subMenuList.css("display", "none");
+      });
 
-        searchBtn.prop("disabled", true);
-        $('#clear-search').hide();
+      $(context).once('icecreamBehaviors').each(function () {
+
+        searchFrmBtn.prop("disabled", true);
 
         inputFrm.on("change", function () {
           if ($('#edit-search-api-fulltext').val().length >= 2) {
-            searchBtn.prop("disabled", false);
+            $(searchFrmBtn).prop("disabled", false);
           } else {
-            searchBtn.prop("disabled", true);
+            $(searchFrmBtn).prop("disabled", true);
           }
-        })
+        });
 
-        searchBtn.on('click', function () {
-          leftSubMenu.css("display", "none");
-          subMenuList.css("display", "none");
-          followUs.css("display", "none");
-          $('#clear-search').show();
-          $('.search-header').show();
-        })
-
-        $(document).on('click', '#clear-search', function () {
+        $(document, context).on('click', '.clear-search', function () {
           leftSubMenu.css("display", "block");
           subMenuList.css("display", "block");
-          followUs.css("display", "block");
           $('.search-content > .view-content').hide();
-          $('#clear-search').hide();
-          $('id^="edit-search-api-fulltext"').val('');
-        })
-      })
+          $(".clear-search").hide();
+          $("input[name^='search_api_fulltext']").val('');
+          $('.search-content > .view-header').hide();
+          $(searchFrmBtn).prop("disabled", false);
+          console.log("Clear Search Works!");
+        });
+      });
     }
-  }
+  };
+
 })(Drupal, jQuery);
-
-
-
